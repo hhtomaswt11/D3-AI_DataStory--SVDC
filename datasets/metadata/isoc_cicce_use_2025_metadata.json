@@ -1,0 +1,260 @@
+{
+  "label": "Cloud computing services by size class of enterprise",
+  "source": "ESTAT",
+  "updated": "2026-02-27T11:00:00+0100",
+  "id": [
+    "freq",
+    "size_emp",
+    "nace_r2",
+    "indic_is",
+    "unit",
+    "geo",
+    "time"
+  ],
+  "size": [
+    1,
+    11,
+    1,
+    31,
+    5,
+    41,
+    1
+  ],
+  "dimension_labels": {
+    "freq": {
+      "label": "Time frequency",
+      "categories": {
+        "A": "Annual"
+      }
+    },
+    "size_emp": {
+      "label": "Size classes in number of persons employed",
+      "categories": {
+        "0_1": "From 0 to 1 person employed",
+        "0-9": "From 0 to 9 persons employed",
+        "1-4": "From 1 to 4 persons employed",
+        "1-9": "From 1 to 9 persons employed",
+        "2-9": "From 2 to 9 persons employed",
+        "5-9": "From 5 to 9 persons employed",
+        "10-49": "From 10 to 49 persons employed",
+        "10-249": "From 10 to 249 persons employed",
+        "GE10": "10 persons employed or more",
+        "50-249": "From 50 to 249 persons employed",
+        "GE250": "250 persons employed or more"
+      }
+    },
+    "nace_r2": {
+      "label": "Statistical classification of economic activities in the European Community (NACE Rev. 2)",
+      "categories": {
+        "C10-S951_X_K": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector"
+      }
+    },
+    "indic_is": {
+      "label": "Information society indicator",
+      "categories": {
+        "E_CC": "Enterprises using paid cloud computing services used over the internet",
+        "E_CC_PEM": "Enterprises using e-mail (as a paid CC service)",
+        "E_CC_PSOFT": "Enterprises using office software (e.g. word processors, spreadsheets, etc.) (as a paid CC service)",
+        "E_CC_PDB": "Enterprises using hosting for the enterprise's database (as a paid CC service)",
+        "E_CC_PFIL": "Enterprises using storage of files (as a paid CC service)",
+        "E_CC_PFACC": "Enterprises using finance or accounting software applications (as a paid CC service)",
+        "E_CC_PCRM": "Enterprises using CRM software (as a paid CC service)",
+        "E_CC_PCPU": "Enterprises using computing power to run the enterprise's own software (as a paid CC service)",
+        "E_CC_PERP": "Enterprises using ERP software applications (as a paid CC service)",
+        "E_CC_PSEC": "Enterprises using security software applications (as a paid CC service)",
+        "E_CC_PDEV": "Enterprises using computing platform providing a hosted environment for application development, testing or deployment (as a paid CC service)",
+        "E_CC_PANY": "Buy at least one of the mentioned CC services - until 2020 (E_CC_PEM, E_CC_PSOFT, E_CC_PDB, E_CC_PFIL, E_CC_PFACC, E_CC_PCRM, E_CC_PCPU)",
+        "E_CC_PNONE": "Don't buy any of the mentioned CC services - until 2020 (E_CC_PEM, E_CC_PSOFT, E_CC_PDB, E_CC_PFIL, E_CC_PFACC, E_CC_PCRM, E_CC_PCPU)",
+        "E_CC1_PANY": "Enterprises using at least one of the paid CC services: CC_PEM, CC_PSOFT, CC_PFACC, CC_PERP, CC_PCRM, CC_PSEC, CC_PDB, CC_PFIL, CC_PCPU, CC_PDEV",
+        "E_CC1_PNONE": "Enterprises not using any of the paid CC services: CC_PEM, CC_PSOFT, CC_PFACC, CC_PERP, CC_PCRM, CC_PSEC, CC_PDB, CC_PFIL, CC_PCPU, CC_PDEV",
+        "E_CC_LO": "Buy only low CC services - until 2020 (e-mail, office software, storage of files)",
+        "E_CC_ME": "Buy only medium CC services - until 2020 (e-mail, office software, storage of files, hosting of the enterprise's database)",
+        "E_CC_HI": "Buy high CC services - until 2020 (accounting software applications, CRM software, computing power)",
+        "E_CC1_B": "Enterprises using only basic paid CC services, at least one of: CC_PEM, CC_PSOFT, CC_PFIL, CC_PCPU",
+        "E_CC1_I": "Enterprises using at most  intermediate paid CC services, at least one of: CC_PFACC, CC_PERP, CC_PCRMCC_PCRM",
+        "E_CC1_S": "Enterprises using sophisticated paid CC services, at least one of: CC_PSEC, CC_PDB, CC_PDEV",
+        "E_CC1_BI": "Enterprises using basic or intermediate paid CC services, at least one of:  CC_PEM, CC_PSOFT, CC_PFIL, CC_PCPU, CC_PFACC, CC_PERP, CC_PCRM",
+        "E_CC1_SI": "Enterprises using sophisticated or intermediate paid CC services, at least one of: CC_PFACC, CC_PERP, CC_PCRM, CC_PSEC, CC_PDB, CC_PDEV",
+        "E_CC1_SS_GE1": "Enterprises using at least one of the paid CC software services: CC_PEM, CC_PSOFT, CC_PFACC, CC_PERP, CC_PCRM, CC_PSEC",
+        "E_CC1_IS_GE1": "Enterprises using at least one of the paid CC infrastructure service: CC_PDB, CC_PFIL, CC_PCPU",
+        "E_CC1_PS": "Enterprises using paid CC platform services: CC_PDEV",
+        "E_CC_IOT": "Enterprises buying CC services and using IoT (until 2021)",
+        "E_CC_IOTX": "Enterprises buying CC services but not using IoT (until 2021)",
+        "E_CC_DA": "Enterprises using paid cloud computing services and perform data analytics",
+        "E_CC_PDBFIL": "Enterprises using hosting for the enterprise's database(s) or storage of files (as a paid CC service)",
+        "E_CC_PHW": "Enterprises using hosting for the enterprise's database(s) or storage of files or computing power (as a paid CC service)"
+      }
+    },
+    "unit": {
+      "label": "Unit of measure",
+      "categories": {
+        "PC_ENT": "Percentage of enterprises",
+        "PC_ENT_CC": "Percentage of enterprises using paid CC services",
+        "PC_ENT_CUSE": "Percentage of the enterprises which use a computer",
+        "PC_ENT_IUSE": "Percentage of enterprises where persons employed have access to the internet",
+        "PC_ENT_IACC": "Percentage of the enterprises with internet access"
+      }
+    },
+    "geo": {
+      "label": "Geopolitical entity (reporting)",
+      "categories": {
+        "EU27_2020": "European Union - 27 countries (from 2020)",
+        "EU28": "European Union - 28 countries (2013-2020)",
+        "EU27_2007": "European Union - 27 countries (2007-2013)",
+        "EU15": "European Union - 15 countries (1995-2004)",
+        "EA": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023, EA21-2026)",
+        "BE": "Belgium",
+        "BG": "Bulgaria",
+        "CZ": "Czechia",
+        "DK": "Denmark",
+        "DE": "Germany",
+        "EE": "Estonia",
+        "IE": "Ireland",
+        "EL": "Greece",
+        "ES": "Spain",
+        "FR": "France",
+        "HR": "Croatia",
+        "IT": "Italy",
+        "CY": "Cyprus",
+        "LV": "Latvia",
+        "LT": "Lithuania",
+        "LU": "Luxembourg",
+        "HU": "Hungary",
+        "MT": "Malta",
+        "NL": "Netherlands",
+        "AT": "Austria",
+        "PL": "Poland",
+        "PT": "Portugal",
+        "RO": "Romania",
+        "SI": "Slovenia",
+        "SK": "Slovakia",
+        "FI": "Finland",
+        "SE": "Sweden",
+        "IS": "Iceland",
+        "NO": "Norway",
+        "UK": "United Kingdom",
+        "BA": "Bosnia and Herzegovina",
+        "ME": "Montenegro",
+        "MK": "North Macedonia",
+        "AL": "Albania",
+        "RS": "Serbia",
+        "TR": "Türkiye"
+      }
+    },
+    "time": {
+      "label": "Time",
+      "categories": {
+        "2025": "2025"
+      }
+    }
+  },
+  "extension": {
+    "lang": "EN",
+    "id": "ISOC_CICCE_USE",
+    "agencyId": "ESTAT",
+    "version": "1.0",
+    "datastructure": {
+      "id": "ISOC_CICCE_USE",
+      "agencyId": "ESTAT",
+      "version": "46.0"
+    },
+    "annotation": [
+      {
+        "type": "CREATED",
+        "date": "2022-12-08T09:48:35+0100"
+      },
+      {
+        "type": "DISSEMINATION_DOI_XML",
+        "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/ISOC_CICCE_USE\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/ISOC_CICCE_USE</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2022-10-26</dct:issued></adms:Identifier></adms:identifier>"
+      },
+      {
+        "type": "DISSEMINATION_OBJECT_TYPE",
+        "title": "DATASET"
+      },
+      {
+        "type": "DISSEMINATION_TIMESTAMP_DATA",
+        "date": "2026-02-27T11:00:00+0100"
+      },
+      {
+        "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+        "date": "2026-04-16T23:00:00+0200"
+      },
+      {
+        "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+        "date": "2026-04-16T23:00:00+0200"
+      },
+      {
+        "type": "ESMS_HTML",
+        "title": "Explanatory texts (metadata)",
+        "href": "https://ec.europa.eu/eurostat/cache/metadata/en/isoc_e_esms.htm"
+      },
+      {
+        "type": "ESMS_SDMX",
+        "title": "Explanatory texts (metadata)",
+        "href": "https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/isoc_e_esms.sdmx.zip"
+      },
+      {
+        "type": "OBS_COUNT",
+        "title": "86033"
+      },
+      {
+        "type": "OBS_PERIOD_OVERALL_LATEST",
+        "title": "2025"
+      },
+      {
+        "type": "OBS_PERIOD_OVERALL_OLDEST",
+        "title": "2014"
+      },
+      {
+        "type": "SOURCE_INSTITUTIONS",
+        "text": "Eurostat"
+      },
+      {
+        "type": "UPDATE_DATA",
+        "date": "2026-02-27T11:00:00+0100"
+      },
+      {
+        "type": "UPDATE_STRUCTURE",
+        "date": "2025-12-11T11:00:00+0100"
+      }
+    ],
+    "status": {
+      "label": {
+        "|C": "|confidential",
+        "b": "break in time series",
+        "u": "low reliability"
+      }
+    },
+    "positions-with-no-data": {
+      "freq": [],
+      "size_emp": [
+        2,
+        3,
+        5
+      ],
+      "nace_r2": [],
+      "indic_is": [
+        11,
+        12,
+        15,
+        16,
+        17,
+        26,
+        27
+      ],
+      "unit": [
+        2,
+        4
+      ],
+      "geo": [
+        1,
+        2,
+        3,
+        32,
+        34,
+        37
+      ],
+      "time": []
+    }
+  }
+}

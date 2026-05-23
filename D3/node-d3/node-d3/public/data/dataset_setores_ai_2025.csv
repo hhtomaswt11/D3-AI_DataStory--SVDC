@@ -1,0 +1,1180 @@
+﻿geo,geo_label,time,year,nace_r2,nace_r2_label,is_total_sector,ai_adoption_pct,sector_rank_within_geo
+AT,Austria,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,83.85,1.0
+AT,Austria,2025,2025,ICT,Information and Communication Technology - total,False,80.0,2.0
+AT,Austria,2025,2025,J,Information and communication,False,79.93,3.0
+AT,Austria,2025,2025,M,"Professional, scientific and technical activities",False,52.8,4.0
+AT,Austria,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,50.63,5.0
+AT,Austria,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,46.14,6.0
+AT,Austria,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,45.87,7.0
+AT,Austria,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,42.22,8.0
+AT,Austria,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,38.17,9.0
+AT,Austria,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,34.86,10.0
+AT,Austria,2025,2025,I55,Accommodation,False,34.11,11.0
+AT,Austria,2025,2025,G45-S951_X_K,"Services, without financial sector",False,32.62,12.0
+AT,Austria,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,32.59,13.0
+AT,Austria,2025,2025,C,Manufacturing,False,32.54,14.0
+AT,Austria,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,31.62,15.0
+AT,Austria,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,29.95,16.0
+AT,Austria,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,29.62,17.0
+AT,Austria,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,27.16,18.0
+AT,Austria,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,26.46,19.0
+AT,Austria,2025,2025,N,Administrative and support service activities,False,25.72,20.0
+AT,Austria,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,24.49,21.0
+AT,Austria,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,24.1,22.0
+AT,Austria,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,23.77,23.0
+AT,Austria,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,23.77,24.0
+AT,Austria,2025,2025,I,Accommodation and food service activities,False,23.72,25.0
+AT,Austria,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,22.65,26.0
+AT,Austria,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,20.86,27.0
+AT,Austria,2025,2025,H,Transportation and storage,False,19.37,28.0
+AT,Austria,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,16.2,29.0
+AT,Austria,2025,2025,F,Construction,False,14.89,30.0
+BE,Belgium,2025,2025,C19,Manufacture of coke and refined petroleum products,False,100.0,1.0
+BE,Belgium,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,90.48,2.0
+BE,Belgium,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,90.48,3.0
+BE,Belgium,2025,2025,ICT,Information and Communication Technology - total,False,80.16,4.0
+BE,Belgium,2025,2025,C27,Manufacture of electrical equipment,False,79.21,5.0
+BE,Belgium,2025,2025,J,Information and communication,False,78.15,6.0
+BE,Belgium,2025,2025,S951,Repair of computers and communication equipment,False,60.0,7.0
+BE,Belgium,2025,2025,M,"Professional, scientific and technical activities",False,57.11,8.0
+BE,Belgium,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,48.47,9.0
+BE,Belgium,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,41.11,10.0
+BE,Belgium,2025,2025,C,Manufacturing,False,39.8,11.0
+BE,Belgium,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,38.85,12.0
+BE,Belgium,2025,2025,G45-S951_X_K,"Services, without financial sector",False,35.83,13.0
+BE,Belgium,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,34.54,14.0
+BE,Belgium,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,32.84,15.0
+BE,Belgium,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,31.59,16.0
+BE,Belgium,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,29.26,17.0
+BE,Belgium,2025,2025,N,Administrative and support service activities,False,28.95,18.0
+BE,Belgium,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,24.49,19.0
+BE,Belgium,2025,2025,H,Transportation and storage,False,22.36,20.0
+BE,Belgium,2025,2025,F,Construction,False,20.25,21.0
+BE,Belgium,2025,2025,I,Accommodation and food service activities,False,18.45,22.0
+BG,Bulgaria,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,44.67,1.0
+BG,Bulgaria,2025,2025,J,Information and communication,False,42.01,2.0
+BG,Bulgaria,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,41.79,3.0
+BG,Bulgaria,2025,2025,ICT,Information and Communication Technology - total,False,37.58,4.0
+BG,Bulgaria,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,27.26,5.0
+BG,Bulgaria,2025,2025,M,"Professional, scientific and technical activities",False,26.38,6.0
+BG,Bulgaria,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,26.12,7.0
+BG,Bulgaria,2025,2025,M72,Scientific research and development,False,22.71,8.0
+BG,Bulgaria,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,22.01,9.0
+BG,Bulgaria,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,18.36,10.0
+BG,Bulgaria,2025,2025,C20,Manufacture of chemicals and chemical products,False,12.9,11.0
+BG,Bulgaria,2025,2025,G45-S951_X_K,"Services, without financial sector",False,10.99,12.0
+BG,Bulgaria,2025,2025,L,Real estate activities,False,10.58,13.0
+BG,Bulgaria,2025,2025,L68,Real estate activities,False,10.58,14.0
+BG,Bulgaria,2025,2025,C27,Manufacture of electrical equipment,False,10.4,15.0
+BG,Bulgaria,2025,2025,J61,Telecommunications,False,9.24,16.0
+BG,Bulgaria,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,8.88,17.0
+BG,Bulgaria,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,8.87,18.0
+BG,Bulgaria,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,8.55,19.0
+BG,Bulgaria,2025,2025,I55,Accommodation,False,7.83,20.0
+BG,Bulgaria,2025,2025,N,Administrative and support service activities,False,7.83,21.0
+BG,Bulgaria,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,7.75,22.0
+BG,Bulgaria,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,7.26,23.0
+BG,Bulgaria,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,6.76,24.0
+BG,Bulgaria,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,6.08,25.0
+BG,Bulgaria,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,6.0,26.0
+BG,Bulgaria,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,5.94,27.0
+BG,Bulgaria,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,5.86,28.0
+BG,Bulgaria,2025,2025,H,Transportation and storage,False,5.71,29.0
+BG,Bulgaria,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,5.61,30.0
+BG,Bulgaria,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,5.61,31.0
+BG,Bulgaria,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,5.55,32.0
+BG,Bulgaria,2025,2025,C,Manufacturing,False,5.25,33.0
+BG,Bulgaria,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,5.13,34.0
+BG,Bulgaria,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,4.72,35.0
+BG,Bulgaria,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,4.54,36.0
+BG,Bulgaria,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,4.53,37.0
+BG,Bulgaria,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,4.41,38.0
+BG,Bulgaria,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,4.25,39.0
+BG,Bulgaria,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,4.17,40.0
+BG,Bulgaria,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,4.01,41.0
+BG,Bulgaria,2025,2025,I,Accommodation and food service activities,False,3.95,42.0
+BG,Bulgaria,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,3.12,43.0
+BG,Bulgaria,2025,2025,F,Construction,False,2.99,44.0
+CY,Cyprus,2025,2025,M72,Scientific research and development,False,59.56,1.0
+CY,Cyprus,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,51.41,2.0
+CY,Cyprus,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,51.24,3.0
+CY,Cyprus,2025,2025,ICT,Information and Communication Technology - total,False,48.77,4.0
+CY,Cyprus,2025,2025,J,Information and communication,False,46.61,5.0
+CY,Cyprus,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,39.64,6.0
+CY,Cyprus,2025,2025,S951,Repair of computers and communication equipment,False,33.33,7.0
+CY,Cyprus,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,23.37,8.0
+CY,Cyprus,2025,2025,J61,Telecommunications,False,20.39,9.0
+CY,Cyprus,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,18.44,10.0
+CY,Cyprus,2025,2025,M,"Professional, scientific and technical activities",False,14.14,11.0
+CY,Cyprus,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,13.67,12.0
+CY,Cyprus,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,12.6,13.0
+CY,Cyprus,2025,2025,I55,Accommodation,False,12.46,14.0
+CY,Cyprus,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,11.71,15.0
+CY,Cyprus,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,11.65,16.0
+CY,Cyprus,2025,2025,G45-S951_X_K,"Services, without financial sector",False,11.11,17.0
+CY,Cyprus,2025,2025,N,Administrative and support service activities,False,10.95,18.0
+CY,Cyprus,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,10.68,19.0
+CY,Cyprus,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,9.8,20.0
+CY,Cyprus,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,9.27,21.0
+CY,Cyprus,2025,2025,L,Real estate activities,False,8.95,22.0
+CY,Cyprus,2025,2025,L68,Real estate activities,False,8.95,23.0
+CY,Cyprus,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,8.51,24.0
+CY,Cyprus,2025,2025,H,Transportation and storage,False,5.52,25.0
+CY,Cyprus,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,5.23,26.0
+CY,Cyprus,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,4.82,27.0
+CY,Cyprus,2025,2025,I,Accommodation and food service activities,False,4.56,28.0
+CY,Cyprus,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,4.38,29.0
+CY,Cyprus,2025,2025,F,Construction,False,4.31,30.0
+CY,Cyprus,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,4.27,31.0
+CY,Cyprus,2025,2025,C,Manufacturing,False,4.26,32.0
+CY,Cyprus,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,4.23,33.0
+CY,Cyprus,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,3.94,34.0
+CY,Cyprus,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,3.92,35.0
+CY,Cyprus,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,3.87,36.0
+CY,Cyprus,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,3.61,37.0
+CY,Cyprus,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,3.25,38.0
+CY,Cyprus,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,2.95,39.0
+CY,Cyprus,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,2.07,40.0
+CY,Cyprus,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,2.04,41.0
+CY,Cyprus,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,1.62,42.0
+CY,Cyprus,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,1.35,43.0
+CY,Cyprus,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,0.0,44.0
+CY,Cyprus,2025,2025,C20,Manufacture of chemicals and chemical products,False,0.0,45.0
+CY,Cyprus,2025,2025,C27,Manufacture of electrical equipment,False,0.0,46.0
+CZ,Czechia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,64.08,1.0
+CZ,Czechia,2025,2025,J,Information and communication,False,60.49,2.0
+CZ,Czechia,2025,2025,ICT,Information and Communication Technology - total,False,54.98,3.0
+CZ,Czechia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,53.08,4.0
+CZ,Czechia,2025,2025,M72,Scientific research and development,False,44.48,5.0
+CZ,Czechia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,40.11,6.0
+CZ,Czechia,2025,2025,J61,Telecommunications,False,37.82,7.0
+CZ,Czechia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,34.62,8.0
+CZ,Czechia,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,33.77,9.0
+CZ,Czechia,2025,2025,M,"Professional, scientific and technical activities",False,33.31,10.0
+CZ,Czechia,2025,2025,S951,Repair of computers and communication equipment,False,32.83,11.0
+CZ,Czechia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,32.09,12.0
+CZ,Czechia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,29.97,13.0
+CZ,Czechia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,29.29,14.0
+CZ,Czechia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,28.21,15.0
+CZ,Czechia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,24.16,16.0
+CZ,Czechia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,21.98,17.0
+CZ,Czechia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,21.65,18.0
+CZ,Czechia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,21.62,19.0
+CZ,Czechia,2025,2025,C27,Manufacture of electrical equipment,False,21.55,20.0
+CZ,Czechia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,20.36,21.0
+CZ,Czechia,2025,2025,C20,Manufacture of chemicals and chemical products,False,20.33,22.0
+CZ,Czechia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,19.59,23.0
+CZ,Czechia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,19.17,24.0
+CZ,Czechia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,18.89,25.0
+CZ,Czechia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,17.93,26.0
+CZ,Czechia,2025,2025,I55,Accommodation,False,17.82,27.0
+CZ,Czechia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,17.6,28.0
+CZ,Czechia,2025,2025,C,Manufacturing,False,16.73,29.0
+CZ,Czechia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,16.41,30.0
+CZ,Czechia,2025,2025,L,Real estate activities,False,15.86,31.0
+CZ,Czechia,2025,2025,L68,Real estate activities,False,15.86,32.0
+CZ,Czechia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,15.02,33.0
+CZ,Czechia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,14.36,34.0
+CZ,Czechia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,13.89,35.0
+CZ,Czechia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,13.12,36.0
+CZ,Czechia,2025,2025,N,Administrative and support service activities,False,13.01,37.0
+CZ,Czechia,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,12.97,38.0
+CZ,Czechia,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,12.97,39.0
+CZ,Czechia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,12.41,40.0
+CZ,Czechia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,12.2,41.0
+CZ,Czechia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,12.16,42.0
+CZ,Czechia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,12.02,43.0
+CZ,Czechia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,11.79,44.0
+CZ,Czechia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,11.56,45.0
+CZ,Czechia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,10.78,46.0
+CZ,Czechia,2025,2025,I,Accommodation and food service activities,False,10.14,47.0
+CZ,Czechia,2025,2025,F,Construction,False,7.84,48.0
+CZ,Czechia,2025,2025,H,Transportation and storage,False,6.06,49.0
+DE,Germany,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,78.22,1.0
+DE,Germany,2025,2025,J,Information and communication,False,75.38,2.0
+DE,Germany,2025,2025,ICT,Information and Communication Technology - total,False,71.25,3.0
+DE,Germany,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,67.34,4.0
+DE,Germany,2025,2025,M72,Scientific research and development,False,59.14,5.0
+DE,Germany,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,57.24,6.0
+DE,Germany,2025,2025,M,"Professional, scientific and technical activities",False,48.3,7.0
+DE,Germany,2025,2025,J61,Telecommunications,False,47.59,8.0
+DE,Germany,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,46.11,9.0
+DE,Germany,2025,2025,C19,Manufacture of coke and refined petroleum products,False,45.65,10.0
+DE,Germany,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,45.6,11.0
+DE,Germany,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,42.49,12.0
+DE,Germany,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,37.38,13.0
+DE,Germany,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,37.38,14.0
+DE,Germany,2025,2025,C20,Manufacture of chemicals and chemical products,False,34.14,15.0
+DE,Germany,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,32.36,16.0
+DE,Germany,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,32.32,17.0
+DE,Germany,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,31.28,18.0
+DE,Germany,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,30.92,19.0
+DE,Germany,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,30.77,20.0
+DE,Germany,2025,2025,C27,Manufacture of electrical equipment,False,29.37,21.0
+DE,Germany,2025,2025,G45-S951_X_K,"Services, without financial sector",False,29.13,22.0
+DE,Germany,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,29.09,23.0
+DE,Germany,2025,2025,L,Real estate activities,False,29.06,24.0
+DE,Germany,2025,2025,L68,Real estate activities,False,29.06,25.0
+DE,Germany,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,27.38,26.0
+DE,Germany,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,25.97,27.0
+DE,Germany,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,25.84,28.0
+DE,Germany,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,25.46,29.0
+DE,Germany,2025,2025,C,Manufacturing,False,24.38,30.0
+DE,Germany,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,24.28,31.0
+DE,Germany,2025,2025,I55,Accommodation,False,23.7,32.0
+DE,Germany,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,23.42,33.0
+DE,Germany,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,22.97,34.0
+DE,Germany,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,22.94,35.0
+DE,Germany,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,22.6,36.0
+DE,Germany,2025,2025,N,Administrative and support service activities,False,22.08,37.0
+DE,Germany,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,22.05,38.0
+DE,Germany,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,21.71,39.0
+DE,Germany,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,21.54,40.0
+DE,Germany,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,19.98,41.0
+DE,Germany,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,19.27,42.0
+DE,Germany,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,18.28,43.0
+DE,Germany,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,16.88,44.0
+DE,Germany,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,15.1,45.0
+DE,Germany,2025,2025,I,Accommodation and food service activities,False,14.63,46.0
+DE,Germany,2025,2025,F,Construction,False,14.28,47.0
+DE,Germany,2025,2025,H,Transportation and storage,False,12.22,48.0
+DK,Denmark,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,81.26,1.0
+DK,Denmark,2025,2025,J,Information and communication,False,79.08,2.0
+DK,Denmark,2025,2025,ICT,Information and Communication Technology - total,False,77.76,3.0
+DK,Denmark,2025,2025,M,"Professional, scientific and technical activities",False,63.71,4.0
+DK,Denmark,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,62.58,5.0
+DK,Denmark,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,60.7,6.0
+DK,Denmark,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,54.9,7.0
+DK,Denmark,2025,2025,G45-S951_X_K,"Services, without financial sector",False,46.83,8.0
+DK,Denmark,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,46.14,9.0
+DK,Denmark,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,44.85,10.0
+DK,Denmark,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,44.8,11.0
+DK,Denmark,2025,2025,S951,Repair of computers and communication equipment,False,44.04,12.0
+DK,Denmark,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,43.32,13.0
+DK,Denmark,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,42.03,14.0
+DK,Denmark,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,41.18,15.0
+DK,Denmark,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,39.4,16.0
+DK,Denmark,2025,2025,C,Manufacturing,False,38.55,17.0
+DK,Denmark,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,35.24,18.0
+DK,Denmark,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,33.55,19.0
+DK,Denmark,2025,2025,N,Administrative and support service activities,False,33.06,20.0
+DK,Denmark,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,32.14,21.0
+DK,Denmark,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,32.14,22.0
+DK,Denmark,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,30.08,23.0
+DK,Denmark,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,29.4,24.0
+DK,Denmark,2025,2025,H,Transportation and storage,False,26.9,25.0
+DK,Denmark,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,26.48,26.0
+DK,Denmark,2025,2025,I,Accommodation and food service activities,False,25.2,27.0
+DK,Denmark,2025,2025,F,Construction,False,23.93,28.0
+EE,Estonia,2025,2025,M72,Scientific research and development,False,73.61,1.0
+EE,Estonia,2025,2025,C19,Manufacture of coke and refined petroleum products,False,66.67,2.0
+EE,Estonia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,57.84,3.0
+EE,Estonia,2025,2025,J,Information and communication,False,56.6,4.0
+EE,Estonia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,55.52,5.0
+EE,Estonia,2025,2025,ICT,Information and Communication Technology - total,False,54.96,6.0
+EE,Estonia,2025,2025,M,"Professional, scientific and technical activities",False,52.24,7.0
+EE,Estonia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,50.68,8.0
+EE,Estonia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,50.31,9.0
+EE,Estonia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,46.25,10.0
+EE,Estonia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,45.93,11.0
+EE,Estonia,2025,2025,C20,Manufacture of chemicals and chemical products,False,42.28,12.0
+EE,Estonia,2025,2025,J61,Telecommunications,False,40.0,13.0
+EE,Estonia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,38.93,14.0
+EE,Estonia,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,35.71,15.0
+EE,Estonia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,31.46,16.0
+EE,Estonia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,28.38,17.0
+EE,Estonia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,27.73,18.0
+EE,Estonia,2025,2025,I55,Accommodation,False,27.25,19.0
+EE,Estonia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,27.01,20.0
+EE,Estonia,2025,2025,C27,Manufacture of electrical equipment,False,25.46,21.0
+EE,Estonia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,25.28,22.0
+EE,Estonia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,25.19,23.0
+EE,Estonia,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,24.65,24.0
+EE,Estonia,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,24.65,25.0
+EE,Estonia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,24.25,26.0
+EE,Estonia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,23.4,27.0
+EE,Estonia,2025,2025,L,Real estate activities,False,23.25,28.0
+EE,Estonia,2025,2025,L68,Real estate activities,False,23.25,29.0
+EE,Estonia,2025,2025,C,Manufacturing,False,22.66,30.0
+EE,Estonia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,22.27,31.0
+EE,Estonia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,21.76,32.0
+EE,Estonia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,21.3,33.0
+EE,Estonia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,20.6,34.0
+EE,Estonia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,20.05,35.0
+EE,Estonia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,19.43,36.0
+EE,Estonia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,19.34,37.0
+EE,Estonia,2025,2025,N,Administrative and support service activities,False,19.07,38.0
+EE,Estonia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,18.4,39.0
+EE,Estonia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,18.03,40.0
+EE,Estonia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,18.01,41.0
+EE,Estonia,2025,2025,F,Construction,False,17.39,42.0
+EE,Estonia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,16.44,43.0
+EE,Estonia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,16.43,44.0
+EE,Estonia,2025,2025,I,Accommodation and food service activities,False,16.25,45.0
+EE,Estonia,2025,2025,H,Transportation and storage,False,13.99,46.0
+EE,Estonia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,11.79,47.0
+EE,Estonia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,10.79,48.0
+EE,Estonia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,8.8,49.0
+EL,Greece,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,52.94,1.0
+EL,Greece,2025,2025,M72,Scientific research and development,False,46.57,2.0
+EL,Greece,2025,2025,ICT,Information and Communication Technology - total,False,44.36,3.0
+EL,Greece,2025,2025,J,Information and communication,False,43.93,4.0
+EL,Greece,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,42.45,5.0
+EL,Greece,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,33.81,6.0
+EL,Greece,2025,2025,J61,Telecommunications,False,31.65,7.0
+EL,Greece,2025,2025,M,"Professional, scientific and technical activities",False,30.81,8.0
+EL,Greece,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,28.01,9.0
+EL,Greece,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,26.68,10.0
+EL,Greece,2025,2025,C20,Manufacture of chemicals and chemical products,False,22.31,11.0
+EL,Greece,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,20.91,12.0
+EL,Greece,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,19.13,13.0
+EL,Greece,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,16.5,14.0
+EL,Greece,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,16.5,15.0
+EL,Greece,2025,2025,S951,Repair of computers and communication equipment,False,16.09,16.0
+EL,Greece,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,15.27,17.0
+EL,Greece,2025,2025,N,Administrative and support service activities,False,14.79,18.0
+EL,Greece,2025,2025,I55,Accommodation,False,13.51,19.0
+EL,Greece,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,13.48,20.0
+EL,Greece,2025,2025,L,Real estate activities,False,12.91,21.0
+EL,Greece,2025,2025,L68,Real estate activities,False,12.91,22.0
+EL,Greece,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,12.67,23.0
+EL,Greece,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,12.67,24.0
+EL,Greece,2025,2025,C27,Manufacture of electrical equipment,False,12.01,25.0
+EL,Greece,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,11.77,26.0
+EL,Greece,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,11.64,27.0
+EL,Greece,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,10.55,28.0
+EL,Greece,2025,2025,H,Transportation and storage,False,9.56,29.0
+EL,Greece,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,9.49,30.0
+EL,Greece,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,9.28,31.0
+EL,Greece,2025,2025,G45-S951_X_K,"Services, without financial sector",False,9.25,32.0
+EL,Greece,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,9.19,33.0
+EL,Greece,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,8.93,34.0
+EL,Greece,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,8.89,35.0
+EL,Greece,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,8.21,36.0
+EL,Greece,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,7.85,37.0
+EL,Greece,2025,2025,C,Manufacturing,False,7.77,38.0
+EL,Greece,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,7.58,39.0
+EL,Greece,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,7.55,40.0
+EL,Greece,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,7.24,41.0
+EL,Greece,2025,2025,F,Construction,False,6.96,42.0
+EL,Greece,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,6.14,43.0
+EL,Greece,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,6.08,44.0
+EL,Greece,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,5.58,45.0
+EL,Greece,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,4.72,46.0
+EL,Greece,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,3.84,47.0
+EL,Greece,2025,2025,I,Accommodation and food service activities,False,3.39,48.0
+ES,Spain,2025,2025,C19,Manufacture of coke and refined petroleum products,False,100.0,1.0
+ES,Spain,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,65.83,2.0
+ES,Spain,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,64.36,3.0
+ES,Spain,2025,2025,J,Information and communication,False,60.57,4.0
+ES,Spain,2025,2025,ICT,Information and Communication Technology - total,False,58.66,5.0
+ES,Spain,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,51.68,6.0
+ES,Spain,2025,2025,M,"Professional, scientific and technical activities",False,38.35,7.0
+ES,Spain,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,37.96,8.0
+ES,Spain,2025,2025,S951,Repair of computers and communication equipment,False,35.14,9.0
+ES,Spain,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,34.68,10.0
+ES,Spain,2025,2025,L,Real estate activities,False,34.39,11.0
+ES,Spain,2025,2025,L68,Real estate activities,False,34.39,12.0
+ES,Spain,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,31.0,13.0
+ES,Spain,2025,2025,C27,Manufacture of electrical equipment,False,28.31,14.0
+ES,Spain,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,25.98,15.0
+ES,Spain,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,25.29,16.0
+ES,Spain,2025,2025,G45-S951_X_K,"Services, without financial sector",False,23.72,17.0
+ES,Spain,2025,2025,C20,Manufacture of chemicals and chemical products,False,23.09,18.0
+ES,Spain,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,22.31,19.0
+ES,Spain,2025,2025,I55,Accommodation,False,22.07,20.0
+ES,Spain,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,21.95,21.0
+ES,Spain,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,21.46,22.0
+ES,Spain,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,20.88,23.0
+ES,Spain,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,20.27,24.0
+ES,Spain,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,19.56,25.0
+ES,Spain,2025,2025,N,Administrative and support service activities,False,18.79,26.0
+ES,Spain,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,18.2,27.0
+ES,Spain,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,17.82,28.0
+ES,Spain,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,17.81,29.0
+ES,Spain,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,17.42,30.0
+ES,Spain,2025,2025,C,Manufacturing,False,17.14,31.0
+ES,Spain,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,16.86,32.0
+ES,Spain,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,16.67,33.0
+ES,Spain,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,15.55,34.0
+ES,Spain,2025,2025,I,Accommodation and food service activities,False,15.23,35.0
+ES,Spain,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,14.99,36.0
+ES,Spain,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,14.93,37.0
+ES,Spain,2025,2025,H,Transportation and storage,False,14.69,38.0
+ES,Spain,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,14.63,39.0
+ES,Spain,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,14.22,40.0
+ES,Spain,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,14.19,41.0
+ES,Spain,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,14.0,42.0
+ES,Spain,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,13.38,43.0
+ES,Spain,2025,2025,F,Construction,False,11.26,44.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,65.7,1.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,J,Information and communication,False,62.52,2.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,ICT,Information and Communication Technology - total,False,60.13,3.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,56.2,4.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,M72,Scientific research and development,False,52.08,5.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,48.02,6.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,41.32,7.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,M,"Professional, scientific and technical activities",False,40.43,8.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,J61,Telecommunications,False,39.76,9.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,38.16,10.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,37.92,11.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C26,"Manufacture of computer, electronic and optical products",False,37.44,12.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,34.96,13.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,33.57,14.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,33.57,15.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C19,Manufacture of coke and refined petroleum products,False,30.41,16.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C20,Manufacture of chemicals and chemical products,False,28.45,17.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C27,Manufacture of electrical equipment,False,25.9,18.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,25.57,19.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,25.45,20.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,L,Real estate activities,False,24.76,21.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,L68,Real estate activities,False,24.76,22.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,S951,Repair of computers and communication equipment,False,24.5,23.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,23.86,24.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,23.42,25.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,G45-S951_X_K,"Services, without financial sector",False,22.96,26.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,22.73,27.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,I55,Accommodation,False,21.31,28.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,20.35,29.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,19.95,30.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,N,Administrative and support service activities,False,19.86,31.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,19.05,32.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,18.62,33.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,18.16,34.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,17.32,35.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C,Manufacturing,False,17.27,36.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,17.16,37.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,16.77,38.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,15.63,39.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,15.46,40.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,14.75,41.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,14.35,42.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,14.33,43.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,13.17,44.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,13.12,45.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,12.47,46.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,12.01,47.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,I,Accommodation and food service activities,False,11.98,48.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,H,Transportation and storage,False,11.15,49.0
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,F,Construction,False,10.79,50.0
+FI,Finland,2025,2025,ICT,Information and Communication Technology - total,False,81.71,1.0
+FI,Finland,2025,2025,J,Information and communication,False,79.79,2.0
+FI,Finland,2025,2025,M,"Professional, scientific and technical activities",False,74.75,3.0
+FI,Finland,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,71.88,4.0
+FI,Finland,2025,2025,I55,Accommodation,False,53.16,5.0
+FI,Finland,2025,2025,L,Real estate activities,False,50.93,6.0
+FI,Finland,2025,2025,L68,Real estate activities,False,50.93,7.0
+FI,Finland,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,45.29,8.0
+FI,Finland,2025,2025,N,Administrative and support service activities,False,38.65,9.0
+FI,Finland,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,37.82,10.0
+FI,Finland,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,37.74,11.0
+FI,Finland,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,36.64,12.0
+FI,Finland,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,35.58,13.0
+FI,Finland,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,34.26,14.0
+FI,Finland,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,27.06,15.0
+FI,Finland,2025,2025,F,Construction,False,24.01,16.0
+FI,Finland,2025,2025,I,Accommodation and food service activities,False,23.53,17.0
+FI,Finland,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,20.76,18.0
+FI,Finland,2025,2025,H,Transportation and storage,False,12.93,19.0
+FR,France,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,60.26,1.0
+FR,France,2025,2025,ICT,Information and Communication Technology - total,False,59.14,2.0
+FR,France,2025,2025,J,Information and communication,False,58.98,3.0
+FR,France,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,48.27,4.0
+FR,France,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,47.83,5.0
+FR,France,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,44.84,6.0
+FR,France,2025,2025,J61,Telecommunications,False,40.77,7.0
+FR,France,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,37.33,8.0
+FR,France,2025,2025,C20,Manufacture of chemicals and chemical products,False,37.25,9.0
+FR,France,2025,2025,M,"Professional, scientific and technical activities",False,32.5,10.0
+FR,France,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,31.91,11.0
+FR,France,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,29.75,12.0
+FR,France,2025,2025,S951,Repair of computers and communication equipment,False,29.45,13.0
+FR,France,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,27.18,14.0
+FR,France,2025,2025,L,Real estate activities,False,26.25,15.0
+FR,France,2025,2025,L68,Real estate activities,False,26.25,16.0
+FR,France,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,25.18,17.0
+FR,France,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,23.25,18.0
+FR,France,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,22.48,19.0
+FR,France,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,21.78,20.0
+FR,France,2025,2025,I55,Accommodation,False,21.18,21.0
+FR,France,2025,2025,G45-S951_X_K,"Services, without financial sector",False,20.53,22.0
+FR,France,2025,2025,N,Administrative and support service activities,False,19.32,23.0
+FR,France,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,19.14,24.0
+FR,France,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,18.79,25.0
+FR,France,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,18.38,26.0
+FR,France,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,18.16,27.0
+FR,France,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,17.47,28.0
+FR,France,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,17.15,29.0
+FR,France,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,17.03,30.0
+FR,France,2025,2025,C,Manufacturing,False,16.93,31.0
+FR,France,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,15.13,32.0
+FR,France,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,14.32,33.0
+FR,France,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,13.17,34.0
+FR,France,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,13.09,35.0
+FR,France,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,13.04,36.0
+FR,France,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,12.9,37.0
+FR,France,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,11.94,38.0
+FR,France,2025,2025,I,Accommodation and food service activities,False,11.83,39.0
+FR,France,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,10.75,40.0
+FR,France,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,9.93,41.0
+FR,France,2025,2025,F,Construction,False,9.52,42.0
+FR,France,2025,2025,H,Transportation and storage,False,8.96,43.0
+HR,Croatia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,76.21,1.0
+HR,Croatia,2025,2025,ICT,Information and Communication Technology - total,False,71.25,2.0
+HR,Croatia,2025,2025,J,Information and communication,False,68.98,3.0
+HR,Croatia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,65.43,4.0
+HR,Croatia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,63.13,5.0
+HR,Croatia,2025,2025,M72,Scientific research and development,False,43.5,6.0
+HR,Croatia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,43.38,7.0
+HR,Croatia,2025,2025,M,"Professional, scientific and technical activities",False,35.28,8.0
+HR,Croatia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,34.26,9.0
+HR,Croatia,2025,2025,J61,Telecommunications,False,28.44,10.0
+HR,Croatia,2025,2025,L,Real estate activities,False,27.47,11.0
+HR,Croatia,2025,2025,L68,Real estate activities,False,27.47,12.0
+HR,Croatia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,27.4,13.0
+HR,Croatia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,25.8,14.0
+HR,Croatia,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,23.1,15.0
+HR,Croatia,2025,2025,S951,Repair of computers and communication equipment,False,22.38,16.0
+HR,Croatia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,21.85,17.0
+HR,Croatia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,20.91,18.0
+HR,Croatia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,20.9,19.0
+HR,Croatia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,19.26,20.0
+HR,Croatia,2025,2025,C27,Manufacture of electrical equipment,False,18.38,21.0
+HR,Croatia,2025,2025,I55,Accommodation,False,16.97,22.0
+HR,Croatia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,16.6,23.0
+HR,Croatia,2025,2025,N,Administrative and support service activities,False,16.43,24.0
+HR,Croatia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,15.53,25.0
+HR,Croatia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,15.19,26.0
+HR,Croatia,2025,2025,C,Manufacturing,False,12.9,27.0
+HR,Croatia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,12.7,28.0
+HR,Croatia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,11.84,29.0
+HR,Croatia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,11.76,30.0
+HR,Croatia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,11.39,31.0
+HR,Croatia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,11.14,32.0
+HR,Croatia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,10.95,33.0
+HR,Croatia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,9.87,34.0
+HR,Croatia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,9.51,35.0
+HR,Croatia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,8.31,36.0
+HR,Croatia,2025,2025,C20,Manufacture of chemicals and chemical products,False,8.28,37.0
+HR,Croatia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,8.27,38.0
+HR,Croatia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,8.06,39.0
+HR,Croatia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,7.27,40.0
+HR,Croatia,2025,2025,I,Accommodation and food service activities,False,6.16,41.0
+HR,Croatia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,5.05,42.0
+HR,Croatia,2025,2025,H,Transportation and storage,False,4.83,43.0
+HR,Croatia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,3.63,44.0
+HR,Croatia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,3.58,45.0
+HR,Croatia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,3.46,46.0
+HR,Croatia,2025,2025,F,Construction,False,3.45,47.0
+HU,Hungary,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,51.15,1.0
+HU,Hungary,2025,2025,C19,Manufacture of coke and refined petroleum products,False,50.0,2.0
+HU,Hungary,2025,2025,J,Information and communication,False,46.05,3.0
+HU,Hungary,2025,2025,ICT,Information and Communication Technology - total,False,43.04,4.0
+HU,Hungary,2025,2025,M72,Scientific research and development,False,35.65,5.0
+HU,Hungary,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,30.39,6.0
+HU,Hungary,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,26.18,7.0
+HU,Hungary,2025,2025,M,"Professional, scientific and technical activities",False,22.86,8.0
+HU,Hungary,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,22.51,9.0
+HU,Hungary,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,20.67,10.0
+HU,Hungary,2025,2025,J61,Telecommunications,False,20.58,11.0
+HU,Hungary,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,20.5,12.0
+HU,Hungary,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,20.0,13.0
+HU,Hungary,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,19.91,14.0
+HU,Hungary,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,19.91,15.0
+HU,Hungary,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,19.06,16.0
+HU,Hungary,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,18.95,17.0
+HU,Hungary,2025,2025,I55,Accommodation,False,15.21,18.0
+HU,Hungary,2025,2025,C27,Manufacture of electrical equipment,False,15.06,19.0
+HU,Hungary,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,14.17,20.0
+HU,Hungary,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,12.85,21.0
+HU,Hungary,2025,2025,C20,Manufacture of chemicals and chemical products,False,12.59,22.0
+HU,Hungary,2025,2025,G45-S951_X_K,"Services, without financial sector",False,12.52,23.0
+HU,Hungary,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,12.36,24.0
+HU,Hungary,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,11.45,25.0
+HU,Hungary,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,11.39,26.0
+HU,Hungary,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,11.06,27.0
+HU,Hungary,2025,2025,S951,Repair of computers and communication equipment,False,10.93,28.0
+HU,Hungary,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,10.87,29.0
+HU,Hungary,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,10.37,30.0
+HU,Hungary,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,9.79,31.0
+HU,Hungary,2025,2025,N,Administrative and support service activities,False,8.68,32.0
+HU,Hungary,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,8.21,33.0
+HU,Hungary,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,8.04,34.0
+HU,Hungary,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,8.0,35.0
+HU,Hungary,2025,2025,C,Manufacturing,False,7.78,36.0
+HU,Hungary,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,7.18,37.0
+HU,Hungary,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,7.11,38.0
+HU,Hungary,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,6.67,39.0
+HU,Hungary,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,6.39,40.0
+HU,Hungary,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,6.13,41.0
+HU,Hungary,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,6.05,42.0
+HU,Hungary,2025,2025,H,Transportation and storage,False,5.86,43.0
+HU,Hungary,2025,2025,I,Accommodation and food service activities,False,5.2,44.0
+HU,Hungary,2025,2025,L,Real estate activities,False,4.69,45.0
+HU,Hungary,2025,2025,L68,Real estate activities,False,4.69,46.0
+HU,Hungary,2025,2025,F,Construction,False,4.53,47.0
+HU,Hungary,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,4.39,48.0
+HU,Hungary,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,3.98,49.0
+HU,Hungary,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,3.82,50.0
+IE,Ireland,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,71.6,1.0
+IE,Ireland,2025,2025,ICT,Information and Communication Technology - total,False,67.08,2.0
+IE,Ireland,2025,2025,J,Information and communication,False,59.82,3.0
+IE,Ireland,2025,2025,J61,Telecommunications,False,47.73,4.0
+IE,Ireland,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,45.82,5.0
+IE,Ireland,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,44.96,6.0
+IE,Ireland,2025,2025,S951,Repair of computers and communication equipment,False,42.86,7.0
+IE,Ireland,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,39.98,8.0
+IE,Ireland,2025,2025,M72,Scientific research and development,False,39.88,9.0
+IE,Ireland,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,39.25,10.0
+IE,Ireland,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,35.67,11.0
+IE,Ireland,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,35.05,12.0
+IE,Ireland,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,35.05,13.0
+IE,Ireland,2025,2025,M,"Professional, scientific and technical activities",False,31.76,14.0
+IE,Ireland,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,30.15,15.0
+IE,Ireland,2025,2025,C20,Manufacture of chemicals and chemical products,False,30.06,16.0
+IE,Ireland,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,27.9,17.0
+IE,Ireland,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,27.11,18.0
+IE,Ireland,2025,2025,N,Administrative and support service activities,False,25.61,19.0
+IE,Ireland,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,24.4,20.0
+IE,Ireland,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,23.06,21.0
+IE,Ireland,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,22.66,22.0
+IE,Ireland,2025,2025,G45-S951_X_K,"Services, without financial sector",False,21.6,23.0
+IE,Ireland,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,20.81,24.0
+IE,Ireland,2025,2025,I55,Accommodation,False,20.2,25.0
+IE,Ireland,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,19.64,26.0
+IE,Ireland,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,19.53,27.0
+IE,Ireland,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,19.18,28.0
+IE,Ireland,2025,2025,L,Real estate activities,False,18.53,29.0
+IE,Ireland,2025,2025,L68,Real estate activities,False,18.53,30.0
+IE,Ireland,2025,2025,C,Manufacturing,False,17.66,31.0
+IE,Ireland,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,17.18,32.0
+IE,Ireland,2025,2025,H,Transportation and storage,False,16.76,33.0
+IE,Ireland,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,16.71,34.0
+IE,Ireland,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,15.46,35.0
+IE,Ireland,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,13.72,36.0
+IE,Ireland,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,13.61,37.0
+IE,Ireland,2025,2025,I,Accommodation and food service activities,False,13.55,38.0
+IE,Ireland,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,13.13,39.0
+IE,Ireland,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,13.08,40.0
+IE,Ireland,2025,2025,C27,Manufacture of electrical equipment,False,11.83,41.0
+IE,Ireland,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,11.4,42.0
+IE,Ireland,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,10.76,43.0
+IE,Ireland,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,10.45,44.0
+IE,Ireland,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,9.86,45.0
+IE,Ireland,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,9.8,46.0
+IE,Ireland,2025,2025,F,Construction,False,9.2,47.0
+IE,Ireland,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,6.01,48.0
+IE,Ireland,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,4.14,49.0
+IE,Ireland,2025,2025,C19,Manufacture of coke and refined petroleum products,False,0.0,50.0
+IT,Italy,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,52.97,1.0
+IT,Italy,2025,2025,J,Information and communication,False,51.28,2.0
+IT,Italy,2025,2025,ICT,Information and Communication Technology - total,False,47.75,3.0
+IT,Italy,2025,2025,J61,Telecommunications,False,37.34,4.0
+IT,Italy,2025,2025,M,"Professional, scientific and technical activities",False,35.72,5.0
+IT,Italy,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,34.08,6.0
+IT,Italy,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,28.48,7.0
+IT,Italy,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,21.32,8.0
+IT,Italy,2025,2025,I55,Accommodation,False,19.95,9.0
+IT,Italy,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,19.46,10.0
+IT,Italy,2025,2025,G45-S951_X_K,"Services, without financial sector",False,18.9,11.0
+IT,Italy,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,18.13,12.0
+IT,Italy,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,16.4,13.0
+IT,Italy,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,16.0,14.0
+IT,Italy,2025,2025,N,Administrative and support service activities,False,15.97,15.0
+IT,Italy,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,15.32,16.0
+IT,Italy,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,14.96,17.0
+IT,Italy,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,14.91,18.0
+IT,Italy,2025,2025,C,Manufacturing,False,14.73,19.0
+IT,Italy,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,14.68,20.0
+IT,Italy,2025,2025,L,Real estate activities,False,13.96,21.0
+IT,Italy,2025,2025,L68,Real estate activities,False,13.96,22.0
+IT,Italy,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,13.49,23.0
+IT,Italy,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,13.45,24.0
+IT,Italy,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,12.15,25.0
+IT,Italy,2025,2025,I,Accommodation and food service activities,False,11.73,26.0
+IT,Italy,2025,2025,H,Transportation and storage,False,11.62,27.0
+IT,Italy,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,11.36,28.0
+IT,Italy,2025,2025,F,Construction,False,10.39,29.0
+IT,Italy,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,8.84,30.0
+IT,Italy,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,8.33,31.0
+LT,Lithuania,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,63.37,1.0
+LT,Lithuania,2025,2025,ICT,Information and Communication Technology - total,False,62.27,2.0
+LT,Lithuania,2025,2025,J,Information and communication,False,60.24,3.0
+LT,Lithuania,2025,2025,M,"Professional, scientific and technical activities",False,37.68,4.0
+LT,Lithuania,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,33.2,5.0
+LT,Lithuania,2025,2025,N,Administrative and support service activities,False,29.75,6.0
+LT,Lithuania,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,26.68,7.0
+LT,Lithuania,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,26.62,8.0
+LT,Lithuania,2025,2025,G45-S951_X_K,"Services, without financial sector",False,23.25,9.0
+LT,Lithuania,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,22.54,10.0
+LT,Lithuania,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,22.43,11.0
+LT,Lithuania,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,22.39,12.0
+LT,Lithuania,2025,2025,S951,Repair of computers and communication equipment,False,22.22,13.0
+LT,Lithuania,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,21.4,14.0
+LT,Lithuania,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,21.3,15.0
+LT,Lithuania,2025,2025,H,Transportation and storage,False,20.02,16.0
+LT,Lithuania,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,20.0,17.0
+LT,Lithuania,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,19.24,18.0
+LT,Lithuania,2025,2025,C,Manufacturing,False,19.17,19.0
+LT,Lithuania,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,19.16,20.0
+LT,Lithuania,2025,2025,L,Real estate activities,False,19.03,21.0
+LT,Lithuania,2025,2025,L68,Real estate activities,False,19.03,22.0
+LT,Lithuania,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,18.19,23.0
+LT,Lithuania,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,17.94,24.0
+LT,Lithuania,2025,2025,F,Construction,False,16.79,25.0
+LT,Lithuania,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,16.22,26.0
+LT,Lithuania,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,16.15,27.0
+LT,Lithuania,2025,2025,I55,Accommodation,False,14.97,28.0
+LT,Lithuania,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,14.0,29.0
+LT,Lithuania,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,13.22,30.0
+LT,Lithuania,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,12.19,31.0
+LT,Lithuania,2025,2025,I,Accommodation and food service activities,False,8.0,32.0
+LU,Luxembourg,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,74.1,1.0
+LU,Luxembourg,2025,2025,J,Information and communication,False,73.48,2.0
+LU,Luxembourg,2025,2025,ICT,Information and Communication Technology - total,False,69.96,3.0
+LU,Luxembourg,2025,2025,M,"Professional, scientific and technical activities",False,51.65,4.0
+LU,Luxembourg,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,50.49,5.0
+LU,Luxembourg,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,47.29,6.0
+LU,Luxembourg,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,47.21,7.0
+LU,Luxembourg,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,40.8,8.0
+LU,Luxembourg,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,39.28,9.0
+LU,Luxembourg,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,38.74,10.0
+LU,Luxembourg,2025,2025,C,Manufacturing,False,37.58,11.0
+LU,Luxembourg,2025,2025,G45-S951_X_K,"Services, without financial sector",False,36.29,12.0
+LU,Luxembourg,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,34.26,13.0
+LU,Luxembourg,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,33.61,14.0
+LU,Luxembourg,2025,2025,N,Administrative and support service activities,False,31.88,15.0
+LU,Luxembourg,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,30.7,16.0
+LU,Luxembourg,2025,2025,H,Transportation and storage,False,27.9,17.0
+LU,Luxembourg,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,27.47,18.0
+LU,Luxembourg,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,27.24,19.0
+LU,Luxembourg,2025,2025,I55,Accommodation,False,25.41,20.0
+LU,Luxembourg,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,25.33,21.0
+LU,Luxembourg,2025,2025,F,Construction,False,23.98,22.0
+LU,Luxembourg,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,20.62,23.0
+LU,Luxembourg,2025,2025,I,Accommodation and food service activities,False,16.95,24.0
+LV,Latvia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,51.52,1.0
+LV,Latvia,2025,2025,M72,Scientific research and development,False,50.0,2.0
+LV,Latvia,2025,2025,J,Information and communication,False,49.82,3.0
+LV,Latvia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,48.17,4.0
+LV,Latvia,2025,2025,ICT,Information and Communication Technology - total,False,46.29,5.0
+LV,Latvia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,38.57,6.0
+LV,Latvia,2025,2025,J61,Telecommunications,False,32.41,7.0
+LV,Latvia,2025,2025,M,"Professional, scientific and technical activities",False,29.02,8.0
+LV,Latvia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,25.59,9.0
+LV,Latvia,2025,2025,C27,Manufacture of electrical equipment,False,25.2,10.0
+LV,Latvia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,23.9,11.0
+LV,Latvia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,23.64,12.0
+LV,Latvia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,23.43,13.0
+LV,Latvia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,23.17,14.0
+LV,Latvia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,22.57,15.0
+LV,Latvia,2025,2025,C20,Manufacture of chemicals and chemical products,False,22.26,16.0
+LV,Latvia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,20.54,17.0
+LV,Latvia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,20.47,18.0
+LV,Latvia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,20.0,19.0
+LV,Latvia,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,18.18,20.0
+LV,Latvia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,16.13,21.0
+LV,Latvia,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,15.54,22.0
+LV,Latvia,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,15.54,23.0
+LV,Latvia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,13.85,24.0
+LV,Latvia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,13.62,25.0
+LV,Latvia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,13.13,26.0
+LV,Latvia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,12.46,27.0
+LV,Latvia,2025,2025,C,Manufacturing,False,12.35,28.0
+LV,Latvia,2025,2025,N,Administrative and support service activities,False,12.33,29.0
+LV,Latvia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,12.21,30.0
+LV,Latvia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,11.84,31.0
+LV,Latvia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,11.8,32.0
+LV,Latvia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,11.73,33.0
+LV,Latvia,2025,2025,I55,Accommodation,False,11.72,34.0
+LV,Latvia,2025,2025,L,Real estate activities,False,11.45,35.0
+LV,Latvia,2025,2025,L68,Real estate activities,False,11.45,36.0
+LV,Latvia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,10.37,37.0
+LV,Latvia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,10.3,38.0
+LV,Latvia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,10.26,39.0
+LV,Latvia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,9.74,40.0
+LV,Latvia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,9.35,41.0
+LV,Latvia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,9.22,42.0
+LV,Latvia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,8.37,43.0
+LV,Latvia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,7.9,44.0
+LV,Latvia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,7.19,45.0
+LV,Latvia,2025,2025,H,Transportation and storage,False,5.9,46.0
+LV,Latvia,2025,2025,F,Construction,False,4.89,47.0
+LV,Latvia,2025,2025,I,Accommodation and food service activities,False,4.46,48.0
+LV,Latvia,2025,2025,S951,Repair of computers and communication equipment,False,0.0,49.0
+MT,Malta,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,66.14,1.0
+MT,Malta,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,62.9,2.0
+MT,Malta,2025,2025,ICT,Information and Communication Technology - total,False,61.9,3.0
+MT,Malta,2025,2025,J,Information and communication,False,60.4,4.0
+MT,Malta,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,52.11,5.0
+MT,Malta,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,50.0,6.0
+MT,Malta,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,50.0,7.0
+MT,Malta,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,47.95,8.0
+MT,Malta,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,41.09,9.0
+MT,Malta,2025,2025,M,"Professional, scientific and technical activities",False,35.43,10.0
+MT,Malta,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,35.0,11.0
+MT,Malta,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,33.52,12.0
+MT,Malta,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,31.95,13.0
+MT,Malta,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,30.0,14.0
+MT,Malta,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,29.74,15.0
+MT,Malta,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,26.1,16.0
+MT,Malta,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,23.95,17.0
+MT,Malta,2025,2025,I55,Accommodation,False,23.92,18.0
+MT,Malta,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,23.32,19.0
+MT,Malta,2025,2025,N,Administrative and support service activities,False,23.2,20.0
+MT,Malta,2025,2025,G45-S951_X_K,"Services, without financial sector",False,23.1,21.0
+MT,Malta,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,22.83,22.0
+MT,Malta,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,22.14,23.0
+MT,Malta,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,21.51,24.0
+MT,Malta,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,20.65,25.0
+MT,Malta,2025,2025,L,Real estate activities,False,19.79,26.0
+MT,Malta,2025,2025,L68,Real estate activities,False,19.79,27.0
+MT,Malta,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,18.57,28.0
+MT,Malta,2025,2025,H,Transportation and storage,False,18.55,29.0
+MT,Malta,2025,2025,J61,Telecommunications,False,18.39,30.0
+MT,Malta,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,17.7,31.0
+MT,Malta,2025,2025,C,Manufacturing,False,17.57,32.0
+MT,Malta,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,16.92,33.0
+MT,Malta,2025,2025,C20,Manufacture of chemicals and chemical products,False,16.67,34.0
+MT,Malta,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,16.02,35.0
+MT,Malta,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,15.85,36.0
+MT,Malta,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,15.72,37.0
+MT,Malta,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,15.44,38.0
+MT,Malta,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,15.36,39.0
+MT,Malta,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,14.99,40.0
+MT,Malta,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,14.75,41.0
+MT,Malta,2025,2025,F,Construction,False,10.61,42.0
+MT,Malta,2025,2025,I,Accommodation and food service activities,False,10.34,43.0
+MT,Malta,2025,2025,C27,Manufacture of electrical equipment,False,9.56,44.0
+MT,Malta,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,7.95,45.0
+MT,Malta,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,2.38,46.0
+MT,Malta,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,0.0,47.0
+MT,Malta,2025,2025,M72,Scientific research and development,False,0.0,48.0
+NL,Netherlands,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,71.47,1.0
+NL,Netherlands,2025,2025,J,Information and communication,False,69.99,2.0
+NL,Netherlands,2025,2025,ICT,Information and Communication Technology - total,False,65.8,3.0
+NL,Netherlands,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,62.53,4.0
+NL,Netherlands,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,59.21,5.0
+NL,Netherlands,2025,2025,M72,Scientific research and development,False,57.12,6.0
+NL,Netherlands,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,55.34,7.0
+NL,Netherlands,2025,2025,M,"Professional, scientific and technical activities",False,54.98,8.0
+NL,Netherlands,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,54.56,9.0
+NL,Netherlands,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,54.56,10.0
+NL,Netherlands,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,52.78,11.0
+NL,Netherlands,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,48.87,12.0
+NL,Netherlands,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,40.7,13.0
+NL,Netherlands,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,40.14,14.0
+NL,Netherlands,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,38.92,15.0
+NL,Netherlands,2025,2025,C20,Manufacture of chemicals and chemical products,False,37.39,16.0
+NL,Netherlands,2025,2025,G45-S951_X_K,"Services, without financial sector",False,35.7,17.0
+NL,Netherlands,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,34.8,18.0
+NL,Netherlands,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,34.52,19.0
+NL,Netherlands,2025,2025,C27,Manufacture of electrical equipment,False,33.6,20.0
+NL,Netherlands,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,33.21,21.0
+NL,Netherlands,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,31.83,22.0
+NL,Netherlands,2025,2025,N,Administrative and support service activities,False,30.85,23.0
+NL,Netherlands,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,30.82,24.0
+NL,Netherlands,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,30.47,25.0
+NL,Netherlands,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,30.45,26.0
+NL,Netherlands,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,29.99,27.0
+NL,Netherlands,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,28.67,28.0
+NL,Netherlands,2025,2025,C,Manufacturing,False,28.56,29.0
+NL,Netherlands,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,27.45,30.0
+NL,Netherlands,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,27.37,31.0
+NL,Netherlands,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,25.86,32.0
+NL,Netherlands,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,25.19,33.0
+NL,Netherlands,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,23.77,34.0
+NL,Netherlands,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,23.54,35.0
+NL,Netherlands,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,23.08,36.0
+NL,Netherlands,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,22.61,37.0
+NL,Netherlands,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,22.6,38.0
+NL,Netherlands,2025,2025,I55,Accommodation,False,21.7,39.0
+NL,Netherlands,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,21.42,40.0
+NL,Netherlands,2025,2025,F,Construction,False,21.29,41.0
+NL,Netherlands,2025,2025,H,Transportation and storage,False,19.65,42.0
+NL,Netherlands,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,18.99,43.0
+NL,Netherlands,2025,2025,I,Accommodation and food service activities,False,16.03,44.0
+PL,Poland,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,41.98,1.0
+PL,Poland,2025,2025,J,Information and communication,False,38.09,2.0
+PL,Poland,2025,2025,ICT,Information and Communication Technology - total,False,36.14,3.0
+PL,Poland,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,30.91,4.0
+PL,Poland,2025,2025,S951,Repair of computers and communication equipment,False,24.94,5.0
+PL,Poland,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,24.81,6.0
+PL,Poland,2025,2025,J61,Telecommunications,False,24.56,7.0
+PL,Poland,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,24.52,8.0
+PL,Poland,2025,2025,M,"Professional, scientific and technical activities",False,22.16,9.0
+PL,Poland,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,21.4,10.0
+PL,Poland,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,20.48,11.0
+PL,Poland,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,20.37,12.0
+PL,Poland,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,16.93,13.0
+PL,Poland,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,16.17,14.0
+PL,Poland,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,16.17,15.0
+PL,Poland,2025,2025,C27,Manufacture of electrical equipment,False,15.85,16.0
+PL,Poland,2025,2025,C20,Manufacture of chemicals and chemical products,False,15.24,17.0
+PL,Poland,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,13.96,18.0
+PL,Poland,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,11.73,19.0
+PL,Poland,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,11.22,20.0
+PL,Poland,2025,2025,N,Administrative and support service activities,False,10.47,21.0
+PL,Poland,2025,2025,G45-S951_X_K,"Services, without financial sector",False,10.31,22.0
+PL,Poland,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,10.18,23.0
+PL,Poland,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,10.05,24.0
+PL,Poland,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,9.81,25.0
+PL,Poland,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,8.88,26.0
+PL,Poland,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,8.54,27.0
+PL,Poland,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,8.36,28.0
+PL,Poland,2025,2025,C,Manufacturing,False,7.7,29.0
+PL,Poland,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,7.69,30.0
+PL,Poland,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,7.6,31.0
+PL,Poland,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,7.48,32.0
+PL,Poland,2025,2025,I55,Accommodation,False,7.27,33.0
+PL,Poland,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,7.18,34.0
+PL,Poland,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,7.05,35.0
+PL,Poland,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,6.63,36.0
+PL,Poland,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,6.56,37.0
+PL,Poland,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,6.51,38.0
+PL,Poland,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,5.95,39.0
+PL,Poland,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,5.91,40.0
+PL,Poland,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,5.89,41.0
+PL,Poland,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,5.85,42.0
+PL,Poland,2025,2025,I,Accommodation and food service activities,False,5.57,43.0
+PL,Poland,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,5.01,44.0
+PL,Poland,2025,2025,L,Real estate activities,False,4.09,45.0
+PL,Poland,2025,2025,L68,Real estate activities,False,4.09,46.0
+PL,Poland,2025,2025,H,Transportation and storage,False,2.97,47.0
+PL,Poland,2025,2025,F,Construction,False,2.35,48.0
+PT,Portugal,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,56.06,1.0
+PT,Portugal,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,54.72,2.0
+PT,Portugal,2025,2025,J,Information and communication,False,52.8,3.0
+PT,Portugal,2025,2025,ICT,Information and Communication Technology - total,False,49.49,4.0
+PT,Portugal,2025,2025,M72,Scientific research and development,False,45.71,5.0
+PT,Portugal,2025,2025,C19,Manufacture of coke and refined petroleum products,False,37.5,6.0
+PT,Portugal,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,31.49,7.0
+PT,Portugal,2025,2025,M,"Professional, scientific and technical activities",False,25.68,8.0
+PT,Portugal,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,23.81,9.0
+PT,Portugal,2025,2025,S951,Repair of computers and communication equipment,False,23.33,10.0
+PT,Portugal,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,20.43,11.0
+PT,Portugal,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,20.43,12.0
+PT,Portugal,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,20.06,13.0
+PT,Portugal,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,18.91,14.0
+PT,Portugal,2025,2025,J61,Telecommunications,False,18.53,15.0
+PT,Portugal,2025,2025,C27,Manufacture of electrical equipment,False,17.18,16.0
+PT,Portugal,2025,2025,I55,Accommodation,False,16.09,17.0
+PT,Portugal,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,15.45,18.0
+PT,Portugal,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,15.0,19.0
+PT,Portugal,2025,2025,H,Transportation and storage,False,14.81,20.0
+PT,Portugal,2025,2025,L,Real estate activities,False,14.8,21.0
+PT,Portugal,2025,2025,L68,Real estate activities,False,14.8,22.0
+PT,Portugal,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,14.4,23.0
+PT,Portugal,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,14.1,24.0
+PT,Portugal,2025,2025,G45-S951_X_K,"Services, without financial sector",False,13.94,25.0
+PT,Portugal,2025,2025,C20,Manufacture of chemicals and chemical products,False,13.75,26.0
+PT,Portugal,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,12.77,27.0
+PT,Portugal,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,11.54,28.0
+PT,Portugal,2025,2025,N,Administrative and support service activities,False,11.06,29.0
+PT,Portugal,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,10.93,30.0
+PT,Portugal,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,10.26,31.0
+PT,Portugal,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,10.13,32.0
+PT,Portugal,2025,2025,C,Manufacturing,False,9.94,33.0
+PT,Portugal,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,9.69,34.0
+PT,Portugal,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,9.48,35.0
+PT,Portugal,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,9.34,36.0
+PT,Portugal,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,9.14,37.0
+PT,Portugal,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,9.11,38.0
+PT,Portugal,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,8.71,39.0
+PT,Portugal,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,8.63,40.0
+PT,Portugal,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,8.59,41.0
+PT,Portugal,2025,2025,I,Accommodation and food service activities,False,8.25,42.0
+PT,Portugal,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,8.15,43.0
+PT,Portugal,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,8.12,44.0
+PT,Portugal,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,6.8,45.0
+PT,Portugal,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,6.79,46.0
+PT,Portugal,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,5.27,47.0
+PT,Portugal,2025,2025,F,Construction,False,4.74,48.0
+RO,Romania,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,34.19,1.0
+RO,Romania,2025,2025,J,Information and communication,False,32.07,2.0
+RO,Romania,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,30.3,3.0
+RO,Romania,2025,2025,ICT,Information and Communication Technology - total,False,30.0,4.0
+RO,Romania,2025,2025,M72,Scientific research and development,False,17.75,5.0
+RO,Romania,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,16.33,6.0
+RO,Romania,2025,2025,M,"Professional, scientific and technical activities",False,15.6,7.0
+RO,Romania,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,15.54,8.0
+RO,Romania,2025,2025,C19,Manufacture of coke and refined petroleum products,False,15.38,9.0
+RO,Romania,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,15.17,10.0
+RO,Romania,2025,2025,J61,Telecommunications,False,13.88,11.0
+RO,Romania,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,12.92,12.0
+RO,Romania,2025,2025,C20,Manufacture of chemicals and chemical products,False,11.49,13.0
+RO,Romania,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,9.0,14.0
+RO,Romania,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,8.55,15.0
+RO,Romania,2025,2025,S951,Repair of computers and communication equipment,False,8.13,16.0
+RO,Romania,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,7.12,17.0
+RO,Romania,2025,2025,C27,Manufacture of electrical equipment,False,7.07,18.0
+RO,Romania,2025,2025,G45-S951_X_K,"Services, without financial sector",False,6.72,19.0
+RO,Romania,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,6.68,20.0
+RO,Romania,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,6.47,21.0
+RO,Romania,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,6.47,22.0
+RO,Romania,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,6.36,23.0
+RO,Romania,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,6.13,24.0
+RO,Romania,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,5.81,25.0
+RO,Romania,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,5.21,26.0
+RO,Romania,2025,2025,N,Administrative and support service activities,False,5.04,27.0
+RO,Romania,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,4.87,28.0
+RO,Romania,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,4.13,29.0
+RO,Romania,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,4.04,30.0
+RO,Romania,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,3.85,31.0
+RO,Romania,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,3.66,32.0
+RO,Romania,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,3.33,33.0
+RO,Romania,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,3.29,34.0
+RO,Romania,2025,2025,C,Manufacturing,False,3.24,35.0
+RO,Romania,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,3.24,36.0
+RO,Romania,2025,2025,H,Transportation and storage,False,3.07,37.0
+RO,Romania,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,3.02,38.0
+RO,Romania,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,2.78,39.0
+RO,Romania,2025,2025,F,Construction,False,2.65,40.0
+RO,Romania,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,2.56,41.0
+RO,Romania,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,2.05,42.0
+RO,Romania,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,1.88,43.0
+RO,Romania,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,1.85,44.0
+RO,Romania,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,1.73,45.0
+RO,Romania,2025,2025,I,Accommodation and food service activities,False,1.71,46.0
+RO,Romania,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,1.52,47.0
+RO,Romania,2025,2025,I55,Accommodation,False,0.66,48.0
+RO,Romania,2025,2025,L,Real estate activities,False,0.58,49.0
+RO,Romania,2025,2025,L68,Real estate activities,False,0.58,50.0
+SE,Sweden,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,89.61,1.0
+SE,Sweden,2025,2025,J,Information and communication,False,87.87,2.0
+SE,Sweden,2025,2025,C19,Manufacture of coke and refined petroleum products,False,87.5,3.0
+SE,Sweden,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,85.8,4.0
+SE,Sweden,2025,2025,ICT,Information and Communication Technology - total,False,85.37,5.0
+SE,Sweden,2025,2025,M72,Scientific research and development,False,68.49,6.0
+SE,Sweden,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,64.89,7.0
+SE,Sweden,2025,2025,M,"Professional, scientific and technical activities",False,64.88,8.0
+SE,Sweden,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,63.82,9.0
+SE,Sweden,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,63.18,10.0
+SE,Sweden,2025,2025,L,Real estate activities,False,56.44,11.0
+SE,Sweden,2025,2025,L68,Real estate activities,False,56.44,12.0
+SE,Sweden,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,53.4,13.0
+SE,Sweden,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,53.4,14.0
+SE,Sweden,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,49.99,15.0
+SE,Sweden,2025,2025,C20,Manufacture of chemicals and chemical products,False,48.13,16.0
+SE,Sweden,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,46.92,17.0
+SE,Sweden,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,44.01,18.0
+SE,Sweden,2025,2025,S951,Repair of computers and communication equipment,False,43.06,19.0
+SE,Sweden,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,42.3,20.0
+SE,Sweden,2025,2025,I55,Accommodation,False,40.68,21.0
+SE,Sweden,2025,2025,G45-S951_X_K,"Services, without financial sector",False,40.33,22.0
+SE,Sweden,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,37.6,23.0
+SE,Sweden,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,37.4,24.0
+SE,Sweden,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,36.16,25.0
+SE,Sweden,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,35.82,26.0
+SE,Sweden,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,35.04,27.0
+SE,Sweden,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,33.73,28.0
+SE,Sweden,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,33.13,29.0
+SE,Sweden,2025,2025,C,Manufacturing,False,32.86,30.0
+SE,Sweden,2025,2025,N,Administrative and support service activities,False,31.61,31.0
+SE,Sweden,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,31.08,32.0
+SE,Sweden,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,27.91,33.0
+SE,Sweden,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,27.53,34.0
+SE,Sweden,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,26.5,35.0
+SE,Sweden,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,24.83,36.0
+SE,Sweden,2025,2025,I,Accommodation and food service activities,False,23.74,37.0
+SE,Sweden,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,23.7,38.0
+SE,Sweden,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,23.59,39.0
+SE,Sweden,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,21.39,40.0
+SE,Sweden,2025,2025,F,Construction,False,14.9,41.0
+SE,Sweden,2025,2025,H,Transportation and storage,False,12.17,42.0
+SI,Slovenia,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,75.86,1.0
+SI,Slovenia,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,75.86,2.0
+SI,Slovenia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,73.05,3.0
+SI,Slovenia,2025,2025,J,Information and communication,False,67.06,4.0
+SI,Slovenia,2025,2025,ICT,Information and Communication Technology - total,False,62.57,5.0
+SI,Slovenia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,60.13,6.0
+SI,Slovenia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,44.4,7.0
+SI,Slovenia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,43.26,8.0
+SI,Slovenia,2025,2025,C27,Manufacture of electrical equipment,False,41.35,9.0
+SI,Slovenia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,39.93,10.0
+SI,Slovenia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,36.58,11.0
+SI,Slovenia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,35.13,12.0
+SI,Slovenia,2025,2025,M72,Scientific research and development,False,33.57,13.0
+SI,Slovenia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,33.32,14.0
+SI,Slovenia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,31.63,15.0
+SI,Slovenia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,31.0,16.0
+SI,Slovenia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,29.81,17.0
+SI,Slovenia,2025,2025,M,"Professional, scientific and technical activities",False,28.29,18.0
+SI,Slovenia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,28.26,19.0
+SI,Slovenia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,27.88,20.0
+SI,Slovenia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,27.46,21.0
+SI,Slovenia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,27.17,22.0
+SI,Slovenia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,25.8,23.0
+SI,Slovenia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,24.92,24.0
+SI,Slovenia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,23.73,25.0
+SI,Slovenia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,23.61,26.0
+SI,Slovenia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,23.36,27.0
+SI,Slovenia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,23.29,28.0
+SI,Slovenia,2025,2025,L,Real estate activities,False,23.15,29.0
+SI,Slovenia,2025,2025,L68,Real estate activities,False,23.15,30.0
+SI,Slovenia,2025,2025,C,Manufacturing,False,22.68,31.0
+SI,Slovenia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,21.89,32.0
+SI,Slovenia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,21.61,33.0
+SI,Slovenia,2025,2025,N,Administrative and support service activities,False,20.2,34.0
+SI,Slovenia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,19.73,35.0
+SI,Slovenia,2025,2025,I55,Accommodation,False,18.7,36.0
+SI,Slovenia,2025,2025,J61,Telecommunications,False,18.56,37.0
+SI,Slovenia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,17.54,38.0
+SI,Slovenia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,17.39,39.0
+SI,Slovenia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,17.3,40.0
+SI,Slovenia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,17.19,41.0
+SI,Slovenia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,16.43,42.0
+SI,Slovenia,2025,2025,I,Accommodation and food service activities,False,12.62,43.0
+SI,Slovenia,2025,2025,H,Transportation and storage,False,8.51,44.0
+SI,Slovenia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,7.84,45.0
+SI,Slovenia,2025,2025,F,Construction,False,5.55,46.0
+SK,Slovakia,2025,2025,C19,Manufacture of coke and refined petroleum products,False,66.67,1.0
+SK,Slovakia,2025,2025,J58-J60,"Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities",False,54.46,2.0
+SK,Slovakia,2025,2025,J,Information and communication,False,50.25,3.0
+SK,Slovakia,2025,2025,J62_J63,"Computer programming, consultancy, and information service activities",False,50.13,4.0
+SK,Slovakia,2025,2025,ICT,Information and Communication Technology - total,False,47.76,5.0
+SK,Slovakia,2025,2025,M72,Scientific research and development,False,46.36,6.0
+SK,Slovakia,2025,2025,J61,Telecommunications,False,45.66,7.0
+SK,Slovakia,2025,2025,N79,"Travel agency, tour operator and other reservation service and related activities",False,29.51,8.0
+SK,Slovakia,2025,2025,M69-M71,Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis,False,29.1,9.0
+SK,Slovakia,2025,2025,M,"Professional, scientific and technical activities",False,28.48,10.0
+SK,Slovakia,2025,2025,C26,"Manufacture of computer, electronic and optical products",False,27.02,11.0
+SK,Slovakia,2025,2025,G47,"Retail trade, except of motor vehicles and motorcycles",False,24.51,12.0
+SK,Slovakia,2025,2025,C29_C30,"Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment",False,24.1,13.0
+SK,Slovakia,2025,2025,M73-M75,"Advertising and market research; other professional, scientific and technical activities; veterinary activities",False,23.82,14.0
+SK,Slovakia,2025,2025,L_M,"Real estate activities; professional, scientific and technical activities",False,23.41,15.0
+SK,Slovakia,2025,2025,C20,Manufacture of chemicals and chemical products,False,22.84,16.0
+SK,Slovakia,2025,2025,C27,Manufacture of electrical equipment,False,21.32,17.0
+SK,Slovakia,2025,2025,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,False,21.05,18.0
+SK,Slovakia,2025,2025,G45-S951_X_K,"Services, without financial sector",False,20.65,19.0
+SK,Slovakia,2025,2025,N,Administrative and support service activities,False,19.79,20.0
+SK,Slovakia,2025,2025,N77-N82_X_N79,"Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support",False,19.51,21.0
+SK,Slovakia,2025,2025,G,Wholesale and retail trade; repair of motor vehicles and motorcycles,False,19.26,22.0
+SK,Slovakia,2025,2025,C19-C23,"Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products",False,19.25,23.0
+SK,Slovakia,2025,2025,C22_C23,Manufacture of rubber and plastic products and other non-metallic mineral products,False,18.27,24.0
+SK,Slovakia,2025,2025,C10-S951_X_K,"All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector",True,18.0,25.0
+SK,Slovakia,2025,2025,C26-C33,"Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment",False,17.88,26.0
+SK,Slovakia,2025,2025,C27_C28,"Manufacture of electrical equipment, machinery and equipment n.e.c.",False,17.47,27.0
+SK,Slovakia,2025,2025,G46,"Wholesale trade, except of motor vehicles and motorcycles",False,17.18,28.0
+SK,Slovakia,2025,2025,C24_C25,"Manufacture of basic metals and fabricated metal products, except machinery and equipment",False,16.43,29.0
+SK,Slovakia,2025,2025,C,Manufacturing,False,15.83,30.0
+SK,Slovakia,2025,2025,H,Transportation and storage,False,15.78,31.0
+SK,Slovakia,2025,2025,C-E,"Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities",False,15.45,32.0
+SK,Slovakia,2025,2025,C28,Manufacture of machinery and equipment n.e.c.,False,15.2,33.0
+SK,Slovakia,2025,2025,S951,Repair of computers and communication equipment,False,14.94,34.0
+SK,Slovakia,2025,2025,I55,Accommodation,False,14.61,35.0
+SK,Slovakia,2025,2025,G45,Wholesale and retail trade and repair of motor vehicles and motorcycles,False,13.95,36.0
+SK,Slovakia,2025,2025,C16-C18,"Manufacture of wood, paper, printing and reproduction",False,13.87,37.0
+SK,Slovakia,2025,2025,C-F,"Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction",False,13.71,38.0
+SK,Slovakia,2025,2025,C13-C15,"Manufacture of textiles, wearing apparel, leather and related products",False,13.33,39.0
+SK,Slovakia,2025,2025,D,"Electricity, gas, steam and air conditioning supply",False,13.22,40.0
+SK,Slovakia,2025,2025,D35,"Electricity, gas, steam and air conditioning supply",False,13.22,41.0
+SK,Slovakia,2025,2025,C10-C18,"Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing",False,12.02,42.0
+SK,Slovakia,2025,2025,C31-C33,"Manufacture of furniture; jewellery, musical instruments, toys; repair and installation of machinery and equipment",False,11.64,43.0
+SK,Slovakia,2025,2025,D_E,"Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities",False,10.45,44.0
+SK,Slovakia,2025,2025,C10-C12,Manufacture of food products; beverages and tobacco products,False,10.32,45.0
+SK,Slovakia,2025,2025,I,Accommodation and food service activities,False,9.82,46.0
+SK,Slovakia,2025,2025,F,Construction,False,8.59,47.0
+SK,Slovakia,2025,2025,L,Real estate activities,False,8.55,48.0
+SK,Slovakia,2025,2025,L68,Real estate activities,False,8.55,49.0
+SK,Slovakia,2025,2025,E,"Water supply; sewerage, waste management and remediation activities",False,8.33,50.0

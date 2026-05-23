@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adoção de IA nas Empresas Europeias, 2025</title>
+  <meta name="description" content="Poster D3.js sobre adoção de IA, maturidade digital, cloud, data analytics, setores e barreiras nas empresas europeias em 2025." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+
+  <main class="poster-shell">
+    <header class="hero panel panel-dark">
+      <div class="hero-copy">
+        <p class="eyebrow">SVDC · Sistemas de Visualização de Dados e Conhecimento · D3.js Poster</p>
+        <p class="authors">Tomás Melo &amp; Nuno Araújo · Mestrado em Inteligência Artificial · Universidade do Minho · 2025/2026</p>
+        <h1>Adoção de IA nas empresas europeias em 2025</h1>
+        <p class="subtitle">Inovação tecnológica ou desigualdade de maturidade digital?</p>
+        <p class="research-question">
+          Em 2025, a utilização de Inteligência Artificial nas empresas europeias está mais associada à maturidade digital global, ao uso de cloud ou à capacidade de análise de dados?
+        </p>
+      </div>
+      <aside class="hero-method">
+        <div class="method-card">
+          <span class="method-label">Fonte</span>
+          <strong>Eurostat</strong>
+          <small>5 datasets relacionados, todos filtrados para 2025</small>
+        </div>
+        <div class="method-card">
+          <span class="method-label">Unidade</span>
+          <strong>% de empresas</strong>
+          <small>empresas com 10+ pessoas empregadas</small>
+        </div>
+        <div class="method-card">
+          <span class="method-label">Âmbito</span>
+          <strong>UE27</strong>
+          <small>27 países + agregado EU27_2020</small>
+        </div>
+      </aside>
+    </header>
+
+    <section class="kpi-grid" aria-label="Indicadores principais">
+      <article class="kpi-card highlight-eu">
+        <span class="kpi-label">UE27 · empresas que usam IA</span>
+        <strong id="kpi-eu-ai">—</strong>
+        <small>referência europeia</small>
+      </article>
+      <article class="kpi-card highlight-pt">
+        <span class="kpi-label">Portugal · empresas que usam IA</span>
+        <strong id="kpi-pt-ai">—</strong>
+        <small id="kpi-pt-gap">—</small>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">País líder</span>
+        <strong id="kpi-leader">—</strong>
+        <small id="kpi-leader-detail">—</small>
+      </article>
+      <article class="kpi-card">
+        <span class="kpi-label">Relação mais forte</span>
+        <strong id="kpi-corr">—</strong>
+        <small>IA vs intensidade digital muito alta</small>
+      </article>
+    </section>
+
+    <section class="poster-intro panel">
+      <div>
+        <span class="strip-label">Percurso de leitura</span>
+        <h2>Da distribuição territorial à explicação estrutural</h2>
+      </div>
+      <p>O poster começa por localizar a adoção de IA, depois testa a associação com maturidade digital, e termina mostrando quem adota, onde a IA se concentra e que barreiras persistem.</p>
+      <ol>
+        <li><span>01</span> Onde?</li>
+        <li><span>02</span> Com que condições digitais?</li>
+        <li><span>03</span> Em que empresas e setores?</li>
+        <li><span>04</span> Com que usos e barreiras?</li>
+      </ol>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-head">
+        <span>01 · Geografia da adoção</span>
+        <h2>Onde a IA empresarial já ganhou escala?</h2>
+        <p>Primeiro, localizamos os países onde a adoção de IA é mais forte e destacamos a posição relativa de Portugal face à média europeia.</p>
+      </div>
+      <div class="story-grid geo-layout">
+        <article class="panel map-panel chart-card chart-card-large">
+          <div class="panel-heading">
+            <div>
+              <p class="section-number">01</p>
+              <h3>Mapa sintético da UE27</h3>
+            </div>
+            <p>Cada célula representa um país; a cor mostra a percentagem de empresas que usam pelo menos uma tecnologia de IA.</p>
+          </div>
+          <div id="tile-map" class="chart chart-map"></div>
+          <div class="insight-box">
+            <strong>Leitura:</strong> a adoção é mais intensa no Norte e Centro da Europa. Portugal aparece abaixo da média da UE, apesar de não estar entre os últimos países.
+          </div>
+        </article>
+
+        <article class="panel ranking-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">02</p>
+              <h3>Ranking UE27</h3>
+            </div>
+            <p>Portugal é destacado a laranja. A linha vertical representa a média EU27.</p>
+          </div>
+          <div id="country-ranking" class="chart chart-ranking"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="visual-section section-feature">
+      <div class="section-head">
+        <span>02 · Maturidade digital</span>
+        <h2>A IA tende a acompanhar ecossistemas empresariais mais digitalizados</h2>
+        <p>A visualização central cruza adoção de IA com intensidade digital muito alta. O tamanho do ponto representa uso de cloud.</p>
+      </div>
+      <div class="story-grid maturity-layout">
+        <article class="panel scatter-panel chart-card chart-card-hero">
+          <div class="panel-heading">
+            <div>
+              <p class="section-number">03</p>
+              <h3>IA vs intensidade digital muito alta</h3>
+            </div>
+            <p>A linha tracejada mostra a tendência linear. Os países nórdicos surgem no topo da adoção; Portugal aparece destacado.</p>
+          </div>
+          <div id="scatter-maturity" class="chart chart-scatter"></div>
+          <div class="insight-row">
+            <div class="mini-insight">
+              <span>Correlação IA × cloud</span>
+              <strong id="corr-cloud">—</strong>
+            </div>
+            <div class="mini-insight">
+              <span>Correlação IA × data analytics</span>
+              <strong id="corr-data">—</strong>
+            </div>
+            <div class="mini-insight emphasis">
+              <span>Correlação IA × intensidade digital muito alta</span>
+              <strong id="corr-dii">—</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel compare-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">04</p>
+              <h3>Portugal vs UE27</h3>
+            </div>
+            <p>Portugal está abaixo da média em IA e cloud, mas revela uma base relevante de data analytics.</p>
+          </div>
+          <div id="pt-vs-eu" class="chart chart-compare"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-head">
+        <span>03 · Estrutura empresarial</span>
+        <h2>A adoção não é homogénea: escala e setor importam</h2>
+        <p>A IA é mais frequente nas grandes empresas e nos setores intensivos em informação, programação, investigação e comunicação.</p>
+      </div>
+      <div class="story-grid structure-layout">
+        <article class="panel size-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">05</p>
+              <h3>A escala empresarial importa</h3>
+            </div>
+            <p>A adoção de IA aumenta fortemente com a dimensão da empresa.</p>
+          </div>
+          <div id="size-chart" class="chart chart-size"></div>
+          <div class="insight-box size-explanation">
+            <strong>Nota de leitura:</strong> a linha laranja representa a média geral da UE27 para todas as empresas com 10 ou mais pessoas empregadas. Ou seja, o valor <strong>10+</strong> não é uma nova dimensão empresarial: é a referência agregada usada para comparar pequenas, médias e grandes empresas.
+          </div>
+        </article>
+
+        <article class="panel sector-panel chart-card chart-card-large">
+          <div class="panel-heading">
+            <div>
+              <p class="section-number">06</p>
+              <h3>Setores onde a IA está mais concentrada</h3>
+            </div>
+            <p>Top setores da UE27 por percentagem de empresas que usam IA.</p>
+          </div>
+          <div id="sector-chart" class="chart chart-sector"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-head">
+        <span>04 · Usos, tecnologias e barreiras</span>
+        <h2>Que IA é usada, para quê, e o que ainda trava a adoção?</h2>
+        <p>O bloco final fecha a narrativa: não basta saber quem usa IA; é preciso perceber que tecnologias entram nas empresas e que obstáculos permanecem.</p>
+      </div>
+      <div class="story-grid usage-layout">
+        <article class="panel tech-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">07</p>
+              <h3>Tecnologias de IA mais usadas</h3>
+            </div>
+            <p>As tecnologias ligadas a texto, geração e automatização dominam o retrato europeu.</p>
+          </div>
+          <div id="tech-chart" class="chart chart-tech"></div>
+        </article>
+
+        <article class="panel purpose-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">08</p>
+              <h3>Finalidades de uso</h3>
+            </div>
+            <p>As finalidades mais visíveis estão ligadas a vendas, gestão e processos internos.</p>
+          </div>
+          <div id="purpose-chart" class="chart chart-purpose"></div>
+        </article>
+
+        <article class="panel barrier-panel chart-card chart-card-wide">
+          <div class="panel-heading">
+            <div>
+              <p class="section-number">09</p>
+              <h3>Barreiras à adoção</h3>
+            </div>
+            <p>Barreiras reportadas entre empresas que não utilizam tecnologias de IA.</p>
+          </div>
+          <div id="barrier-chart" class="chart chart-barrier"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="conclusion panel panel-dark conclusion-panel">
+      <div>
+        <p class="eyebrow">Conclusão visual</p>
+        <h2>A IA não aparece isolada: tende a acompanhar ecossistemas empresariais mais digitalizados.</h2>
+      </div>
+      <p>
+        Em 2025, a adoção de IA nas empresas europeias está fortemente associada à intensidade digital, mais do que apenas ao uso isolado de cloud ou data analytics. A leitura principal não é só “quem usa IA”, mas sim “quem já tem condições digitais para a integrar”. Portugal surge abaixo da média europeia em IA e cloud, mas com uma base relevante de data analytics — sinal de potencial por explorar.
+      </p>
+      <div class="source-note">
+        Dados: Eurostat, 2025 · Datasets tratados: IA por país/dimensão, IA por setor, cloud computing, data analytics, Digital Intensity Index, tecnologias/finalidades/barreiras de IA. Visualização: D3.js.
+      </div>
+    </section>
+  </main>
+
+  <script src="js/d3.v7.min.js"></script>
+  <script>
+    if (!window.d3) {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/d3@7"><\/script>');
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+﻿geo,geo_label,time,year,indic_is,indicator_short_label,indic_is_label,indicator_category,unit,unit_label,value
+AT,Austria,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,11.35
+AT,Austria,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,6.7
+AT,Austria,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.01
+AT,Austria,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.4
+AT,Austria,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,13.33
+AT,Austria,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,7.56
+AT,Austria,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,5.15
+BE,Belgium,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,13.68
+BE,Belgium,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,10.78
+BE,Belgium,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,8.59
+BE,Belgium,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,2.09
+BE,Belgium,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,9.12
+BE,Belgium,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,5.9
+BE,Belgium,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,7.64
+BG,Bulgaria,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,2.78
+BG,Bulgaria,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,2.1
+BG,Bulgaria,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,1.18
+BG,Bulgaria,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.92
+BG,Bulgaria,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,3.08
+BG,Bulgaria,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,2.05
+BG,Bulgaria,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,1.65
+CY,Cyprus,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,4.2
+CY,Cyprus,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.44
+CY,Cyprus,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,2.71
+CY,Cyprus,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.56
+CY,Cyprus,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,4.4
+CY,Cyprus,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,1.12
+CY,Cyprus,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.73
+CZ,Czechia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,7.04
+CZ,Czechia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,4.26
+CZ,Czechia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,4.28
+CZ,Czechia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.22
+CZ,Czechia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,10.41
+CZ,Czechia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.17
+CZ,Czechia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,4.07
+DE,Germany,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,7.18
+DE,Germany,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,7.12
+DE,Germany,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.36
+DE,Germany,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.19
+DE,Germany,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,9.1
+DE,Germany,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,5.49
+DE,Germany,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.33
+DK,Denmark,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,10.02
+DK,Denmark,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,11.59
+DK,Denmark,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,9.42
+DK,Denmark,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,3.64
+DK,Denmark,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,11.37
+DK,Denmark,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,6.14
+DK,Denmark,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,4.9
+EE,Estonia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,11.4
+EE,Estonia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,6.1
+EE,Estonia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,4.79
+EE,Estonia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.41
+EE,Estonia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,10.74
+EE,Estonia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.95
+EE,Estonia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.95
+EL,Greece,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,2.33
+EL,Greece,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.09
+EL,Greece,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,4.77
+EL,Greece,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.23
+EL,Greece,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,2.4
+EL,Greece,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,1.88
+EL,Greece,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,1.58
+ES,Spain,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,5.79
+ES,Spain,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,4.14
+ES,Spain,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,3.54
+ES,Spain,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.44
+ES,Spain,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,5.97
+ES,Spain,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,4.28
+ES,Spain,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,4.28
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,6.19
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,4.61
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,3.94
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.21
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,6.92
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,4.14
+EU27_2020,European Union - 27 countries (from 2020),2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.8
+FI,Finland,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,9.99
+FI,Finland,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,11.05
+FI,Finland,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,7.85
+FI,Finland,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,2.67
+FI,Finland,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,15.81
+FI,Finland,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,6.87
+FI,Finland,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,8.47
+FR,France,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,3.16
+FR,France,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.15
+FR,France,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.79
+HR,Croatia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,3.57
+HR,Croatia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.58
+HR,Croatia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,3.74
+HR,Croatia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.4
+HR,Croatia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,4.86
+HR,Croatia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,1.35
+HR,Croatia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,0.81
+HU,Hungary,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,3.28
+HU,Hungary,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.56
+HU,Hungary,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,1.38
+HU,Hungary,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.63
+HU,Hungary,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,3.6
+HU,Hungary,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,2.37
+HU,Hungary,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,1.77
+IE,Ireland,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,7.6
+IE,Ireland,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,4.58
+IE,Ireland,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.24
+IE,Ireland,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.47
+IE,Ireland,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,5.25
+IE,Ireland,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.19
+IE,Ireland,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,5.22
+IT,Italy,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,4.22
+IT,Italy,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.67
+IT,Italy,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,1.99
+IT,Italy,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.0
+IT,Italy,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,5.43
+IT,Italy,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,2.87
+IT,Italy,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.27
+LT,Lithuania,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,7.3
+LT,Lithuania,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,6.56
+LT,Lithuania,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.62
+LT,Lithuania,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,2.84
+LT,Lithuania,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,7.84
+LT,Lithuania,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.74
+LT,Lithuania,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,4.73
+LU,Luxembourg,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,9.16
+LU,Luxembourg,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,5.74
+LU,Luxembourg,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.91
+LU,Luxembourg,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.16
+LU,Luxembourg,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,5.7
+LU,Luxembourg,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,4.46
+LU,Luxembourg,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,5.57
+LV,Latvia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,4.42
+LV,Latvia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,3.27
+LV,Latvia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,2.77
+LV,Latvia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.1
+LV,Latvia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,6.96
+LV,Latvia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.72
+LV,Latvia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.2
+MT,Malta,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,4.57
+MT,Malta,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,1.88
+MT,Malta,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.51
+MT,Malta,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.9
+MT,Malta,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,8.25
+MT,Malta,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,5.15
+MT,Malta,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,2.99
+NL,Netherlands,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,13.05
+NL,Netherlands,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,7.54
+NL,Netherlands,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,6.62
+NL,Netherlands,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,2.09
+NL,Netherlands,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,12.34
+NL,Netherlands,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,6.91
+NL,Netherlands,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,8.49
+PL,Poland,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,3.58
+PL,Poland,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,2.57
+PL,Poland,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,2.2
+PL,Poland,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.84
+PL,Poland,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,4.93
+PL,Poland,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,2.51
+PL,Poland,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,2.04
+PT,Portugal,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,4.71
+PT,Portugal,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,3.02
+PT,Portugal,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,3.32
+PT,Portugal,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.99
+PT,Portugal,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,4.26
+PT,Portugal,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,3.47
+PT,Portugal,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,3.0
+RO,Romania,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,1.83
+RO,Romania,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,0.85
+RO,Romania,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,1.15
+RO,Romania,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,0.54
+RO,Romania,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,1.71
+RO,Romania,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,1.39
+RO,Romania,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,1.35
+SE,Sweden,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,12.25
+SE,Sweden,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,4.9
+SE,Sweden,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,5.78
+SE,Sweden,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.99
+SE,Sweden,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,14.6
+SE,Sweden,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,9.2
+SE,Sweden,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,7.55
+SI,Slovenia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,7.61
+SI,Slovenia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,2.43
+SI,Slovenia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,8.57
+SI,Slovenia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.22
+SI,Slovenia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,6.47
+SI,Slovenia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,4.51
+SI,Slovenia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,4.14
+SK,Slovakia,2025,2025,E_AI_PBAM,Business administration / management,Enterprises using AI technologies for organisation of business administration processes or management,AI purpose,PC_ENT,Percentage of enterprises,2.66
+SK,Slovakia,2025,2025,E_AI_PFIN,Accounting / finance management,"Enterprises using AI technologies for accounting, controlling or finance management",AI purpose,PC_ENT,Percentage of enterprises,3.27
+SK,Slovakia,2025,2025,E_AI_PITS,ICT security,Enterprises using AI technologies for ICT security,AI purpose,PC_ENT,Percentage of enterprises,2.44
+SK,Slovakia,2025,2025,E_AI_PLOG,Logistics,Enterprises using AI technologies for logistics,AI purpose,PC_ENT,Percentage of enterprises,1.09
+SK,Slovakia,2025,2025,E_AI_PMS,Marketing or sales,Enterprises using AI technologies for marketing or sales,AI purpose,PC_ENT,Percentage of enterprises,4.85
+SK,Slovakia,2025,2025,E_AI_PPP,Production processes,Enterprises using AI technologies for production processes,AI purpose,PC_ENT,Percentage of enterprises,1.77
+SK,Slovakia,2025,2025,E_AI_PRDI,R&D or innovation,Enterprises using AI technologies for research and development (R&D) or innovation activity,AI purpose,PC_ENT,Percentage of enterprises,2.47

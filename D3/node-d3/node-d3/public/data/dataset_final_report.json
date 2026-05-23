@@ -1,0 +1,149 @@
+{
+  "year": 2025,
+  "geographic_scope": "EU27 countries + EU27_2020 aggregate",
+  "main_dataset_rows": 28,
+  "country_rows_without_aggregate": 27,
+  "main_question": "In 2025, is AI adoption by European enterprises more strongly associated with overall digital maturity, cloud computing or data analytics?",
+  "recommended_poster_title": "AI Adoption in European Enterprises, 2025: innovation gap or digital maturity gap?",
+  "correlations_eu27_only": {
+    "corr_ai_vs_cloud_use_pct": 0.6406,
+    "corr_ai_vs_data_analytics_pct": 0.4849,
+    "corr_ai_vs_dii_at_least_basic_pct": 0.8266,
+    "corr_ai_vs_dii_high_pct": 0.8148,
+    "corr_ai_vs_dii_very_high_pct": 0.8479,
+    "corr_ai_vs_digital_maturity_score_simple": 0.7904
+  },
+  "top5_ai_adoption": [
+    {
+      "geo": "DK",
+      "geo_label": "Denmark",
+      "ai_adoption_pct": 42.03
+    },
+    {
+      "geo": "FI",
+      "geo_label": "Finland",
+      "ai_adoption_pct": 37.82
+    },
+    {
+      "geo": "SE",
+      "geo_label": "Sweden",
+      "ai_adoption_pct": 35.04
+    },
+    {
+      "geo": "BE",
+      "geo_label": "Belgium",
+      "ai_adoption_pct": 34.54
+    },
+    {
+      "geo": "LU",
+      "geo_label": "Luxembourg",
+      "ai_adoption_pct": 33.61
+    }
+  ],
+  "bottom5_ai_adoption": [
+    {
+      "geo": "RO",
+      "geo_label": "Romania",
+      "ai_adoption_pct": 5.21
+    },
+    {
+      "geo": "PL",
+      "geo_label": "Poland",
+      "ai_adoption_pct": 8.36
+    },
+    {
+      "geo": "BG",
+      "geo_label": "Bulgaria",
+      "ai_adoption_pct": 8.55
+    },
+    {
+      "geo": "EL",
+      "geo_label": "Greece",
+      "ai_adoption_pct": 8.93
+    },
+    {
+      "geo": "CY",
+      "geo_label": "Cyprus",
+      "ai_adoption_pct": 9.27
+    }
+  ],
+  "portugal_summary": [
+    {
+      "geo": "PT",
+      "geo_label": "Portugal",
+      "ai_adoption_pct": 11.54,
+      "ai_two_or_more_technologies_pct": 8.04,
+      "ai_three_or_more_technologies_pct": 5.2,
+      "ai_and_data_analytics_pct": 8.87,
+      "ai_and_cloud_pct": 8.68,
+      "ai_sophisticated_cloud_and_data_pct": 7.21,
+      "cloud_data_but_no_ai_pct": 14.96,
+      "ai_without_sophisticated_cloud_or_data_pct": 1.56,
+      "cloud_use_pct": 38.71,
+      "sophisticated_or_intermediate_cloud_pct": 34.11,
+      "cloud_and_data_analytics_pct": 23.9,
+      "data_analytics_pct": 44.98,
+      "data_analytics_3_sources_pct": 22.65,
+      "dii_at_least_basic_pct": 64.67,
+      "dii_high_pct": 21.84,
+      "dii_very_high_pct": 7.69,
+      "dii_low_pct": 35.14,
+      "dii_very_low_pct": 35.33,
+      "is_eu_aggregate": false,
+      "geo_eurostat": "PT",
+      "iso_a2": "PT",
+      "iso_a3": "PRT",
+      "year": 2025,
+      "source": "Eurostat",
+      "ai_gap_to_eu_pp": -8.41,
+      "cloud_gap_to_eu_pp": -14.03,
+      "data_analytics_gap_to_eu_pp": 5.13,
+      "dii_high_gap_to_eu_pp": -5.7,
+      "ai_rank_eu27": 21,
+      "digital_maturity_score_simple": 35.58,
+      "digital_maturity_minus_ai_pp": 24.04
+    }
+  ],
+  "missing_values_by_column": {
+    "geo": 0,
+    "geo_label": 0,
+    "ai_adoption_pct": 0,
+    "ai_two_or_more_technologies_pct": 0,
+    "ai_three_or_more_technologies_pct": 0,
+    "ai_and_data_analytics_pct": 0,
+    "ai_and_cloud_pct": 0,
+    "ai_sophisticated_cloud_and_data_pct": 0,
+    "cloud_data_but_no_ai_pct": 0,
+    "ai_without_sophisticated_cloud_or_data_pct": 0,
+    "cloud_use_pct": 0,
+    "sophisticated_or_intermediate_cloud_pct": 0,
+    "cloud_and_data_analytics_pct": 0,
+    "data_analytics_pct": 0,
+    "data_analytics_3_sources_pct": 0,
+    "dii_at_least_basic_pct": 0,
+    "dii_high_pct": 0,
+    "dii_very_high_pct": 0,
+    "dii_low_pct": 0,
+    "dii_very_low_pct": 0,
+    "is_eu_aggregate": 0,
+    "geo_eurostat": 0,
+    "iso_a2": 0,
+    "iso_a3": 0,
+    "year": 0,
+    "source": 0,
+    "ai_gap_to_eu_pp": 0,
+    "cloud_gap_to_eu_pp": 0,
+    "data_analytics_gap_to_eu_pp": 0,
+    "dii_high_gap_to_eu_pp": 0,
+    "ai_rank_eu27": 1,
+    "digital_maturity_score_simple": 0,
+    "digital_maturity_minus_ai_pp": 0
+  },
+  "warnings": [],
+  "notes": [
+    "Todas as percentagens usam unit=PC_ENT, exceto ficheiros auxiliares quando indicado.",
+    "O dataset_final.csv está ao nível país/agregado.",
+    "Os ficheiros auxiliares são recomendados para completar o poster em D3.",
+    "digital_maturity_score_simple não é indicador oficial Eurostat; é uma média simples criada para ordenação visual."
+  ]
+}
