@@ -856,9 +856,11 @@ function drawSimpleHorizontalBars(container, rawData, options) {
     color = COLORS.blue,
     height = 380,
     marginLeft = 210,
+    marginBottom = 42,
     maxDomain = null,
     sort = "desc",
-    tooltipUnit = "%"
+    tooltipUnit = "%",
+    labelMaxChars = 32
   } = options;
 
   let data = rawData.slice();
@@ -866,7 +868,7 @@ function drawSimpleHorizontalBars(container, rawData, options) {
   if (sort === "asc") data.sort((a, b) => d3.ascending(+a[valueKey], +b[valueKey]));
   data = data.reverse();
 
-  const { g, innerWidth, innerHeight } = createSvg(container, 560, height, { top: title ? 42 : 16, right: 38, bottom: 42, left: marginLeft });
+  const { g, innerWidth, innerHeight } = createSvg(container, 560, height, { top: title ? 42 : 16, right: 38, bottom: marginBottom, left: marginLeft });
   if (title) {
     g.append("text")
       .attr("x", 0)
@@ -883,7 +885,7 @@ function drawSimpleHorizontalBars(container, rawData, options) {
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).tickFormat(key => {
     const row = data.find(d => d[labelKey] === key);
     const label = labels(row);
-    return label.length > 32 ? label.slice(0, 30) + "…" : label;
+    return label.length > labelMaxChars ? label.slice(0, labelMaxChars - 2) + "…" : label;
   }));
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x).ticks(5).tickFormat(d => `${d}${tooltipUnit}`));
 
@@ -941,21 +943,24 @@ function drawPurposeChart(purposeData) {
 
 function drawBarrierChart(barrierData) {
   const eu = barrierData.filter(d => d.geo === "EU27_2020");
+
   drawSimpleHorizontalBars("#barrier-chart", eu, {
     labelMap: BARRIER_TRANSLATION,
     color: COLORS.red,
-    height: 430,
-    marginLeft: 320,
+    height: 390,
+    marginLeft: 310,
+    marginBottom: 82,
     maxDomain: 12,
-    tooltipUnit: "%"
+    tooltipUnit: "%",
+    labelMaxChars: 60
   });
 
   d3.select("#barrier-chart svg")
     .append("text")
     .attr("x", 40)
-    .attr("y", 415)
+    .attr("y", 375)
     .attr("fill", COLORS.muted)
-    .attr("font-size", 13)
+    .attr("font-size", 11)
     .attr("font-weight", 700)
     .text("Nota: percentagem calculada entre empresas que não usam tecnologias de IA.");
 }

@@ -437,7 +437,14 @@ body::before {
 .chart-sector { min-height: 560px; }
 .chart-tech { min-height: 500px; }
 .chart-purpose { min-height: 480px; }
-.chart-barrier { min-height: 510px; }
+.chart-barrier { 
+  min-height: 430px; 
+}
+
+.chart-barrier svg {
+  width: 88%;
+  margin: 0 auto;
+}
 
 .insight-box {
   margin-top: 18px;
