@@ -522,19 +522,16 @@ body {
 .chart-ranking    { min-height: 650px; }
 .chart-scatter    { min-height: 660px; }
 .chart-compare    { min-height: 430px; }
-.chart-size       { min-height: 430px; }
+.chart-size       { min-height: 440px; }
 .chart-sector     { min-height: 560px; }
 .chart-tech       { min-height: 500px; }
 .chart-purpose    { min-height: 480px; }
-.chart-barrier    { min-height: 430px; }
+.chart-barrier    { min-height: 480px; }
 .chart-correlation { min-height: 470px; }
 .chart-conversion  { min-height: 470px; }
 .chart-depth       { min-height: 470px; }
 
-.chart-barrier svg {
-  width: 88%;
-  margin: 0 auto;
-}
+/* barrier chart is now full-width lollipop */
 
 /* ——————————————————————————————————————
    CAIXAS DE INSIGHT

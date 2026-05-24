@@ -136,6 +136,33 @@ function sectorLabel(label) {
   return label.length > 50 ? label.slice(0, 48) + "…" : label;
 }
 
+const SECTOR_CODE_LABELS = {
+  "J62_J63": "Programação e serviços de informação",
+  "J": "Informação e comunicação",
+  "ICT": "TIC · total",
+  "J58-J60": "Media, audiovisual e broadcasting",
+  "M72": "Investigação científica e desenvolvimento",
+  "M73-M75": "Publicidade, mercado e técnicos",
+  "C21": "Indústria farmacêutica",
+  "M": "Ativ. profissionais/científicas · total",
+  "J61": "Telecomunicações",
+  "L_M": "Imobiliário + serv. profissionais",
+  "M69-M71": "Jurídico, contabilidade e engenharia",
+  "C26": "Equipamento informático/eletrónico",
+  "D": "Energia · total",
+  "D35": "Energia elétrica, gás e vapor",
+  "N79": "Agências de viagem",
+  "F": "Construção",
+  "H": "Transportes e armazenagem",
+  "I": "Alojamento e restauração"
+};
+
+function sectorDisplay(rowOrCode, maybeLabel) {
+  const code = typeof rowOrCode === "object" ? rowOrCode.nace_r2 : rowOrCode;
+  const label = typeof rowOrCode === "object" ? rowOrCode.nace_r2_label : maybeLabel;
+  return SECTOR_CODE_LABELS[code] || sectorLabel(label || code);
+}
+
 function pct(value, digits = 1) {
   if (value === null || value === undefined || Number.isNaN(+value)) return "—";
   const f = digits === 2 ? fmt.pct2 : fmt.pct;
@@ -723,82 +750,107 @@ function drawPortugalVsEU(finalData) {
 }
 
 function drawSizeChart(sizeData) {
-  const euRows = sizeData
-    .filter(d => d.geo === "EU27_2020")
-    .sort((a, b) => d3.ascending(a.size_order, b.size_order));
+  // Grouped bars: UE27 vs Portugal, por dimensao empresarial
+  const sizeOrder = ["10-49", "50-249", "GE250"];
+  const sizeLabels = { "10-49": "Pequenas (10–49)", "50-249": "Medias (50–249)", "GE250": "Grandes (250+)" };
 
-  const total = euRows.find(d => d.size_emp === "GE10");
-  const data = euRows.filter(d => d.size_emp !== "GE10");
-  const sizeLabels = {
-    "10-49": "Pequenas\n10–49",
-    "50-249": "Médias\n50–249",
-    "GE250": "Grandes\n250+"
-  };
+  const euRows = sizeData.filter(d => d.geo === "EU27_2020" && sizeOrder.includes(d.size_emp));
+  const ptRows = sizeData.filter(d => d.geo === "PT" && sizeOrder.includes(d.size_emp));
 
-  const { g, innerWidth, innerHeight } = createSvg("#size-chart", 560, 360, { top: 24, right: 22, bottom: 62, left: 52 });
-  const x = d3.scaleBand().domain(data.map(d => d.size_emp)).range([0, innerWidth]).padding(0.28);
+  // Flat array for grouped bars
+  const data = sizeOrder.flatMap(sz => [
+    { size: sz, group: "UE27", value: (euRows.find(d => d.size_emp === sz) || {}).ai_adoption_pct || 0 },
+    { size: sz, group: "Portugal", value: (ptRows.find(d => d.size_emp === sz) || {}).ai_adoption_pct || 0 }
+  ]);
+
+  const { g, innerWidth, innerHeight } = createSvg("#size-chart", 560, 370, { top: 48, right: 22, bottom: 62, left: 52 });
+  const x0 = d3.scaleBand().domain(sizeOrder).range([0, innerWidth]).padding(0.28);
+  const x1 = d3.scaleBand().domain(["UE27", "Portugal"]).range([0, x0.bandwidth()]).padding(0.1);
   const y = d3.scaleLinear().domain([0, 62]).range([innerHeight, 0]);
-  const color = d3.scaleLinear().domain([17, 55]).range(["#bfdbfe", COLORS.blueDark]);
+  const colorMap = { "UE27": COLORS.blue, "Portugal": COLORS.orange };
 
   addGridY(g, y, innerWidth);
-  g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(d => `${d}%`));
-  const axis = g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x).tickFormat(d => sizeLabels[d].split("\n")[0]));
-  axis.selectAll("text").attr("font-weight", 800);
+  g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(d => d + "%"));
 
-  g.selectAll("text.subtick")
-    .data(data)
-    .join("text")
-    .attr("class", "subtick")
-    .attr("x", d => x(d.size_emp) + x.bandwidth() / 2)
-    .attr("y", innerHeight + 42)
-    .attr("text-anchor", "middle")
-    .attr("fill", COLORS.muted)
-    .attr("font-size", 11)
-    .text(d => sizeLabels[d.size_emp].split("\n")[1]);
+  const xAxis = g.append("g").attr("class", "axis").attr("transform", "translate(0," + innerHeight + ")")
+    .call(d3.axisBottom(x0).tickFormat(d => sizeLabels[d].split(" ")[0]));
+  xAxis.selectAll("text").attr("font-weight", 800);
 
-  g.selectAll("rect.size")
-    .data(data)
+  // Subtick labels
+  sizeOrder.forEach(sz => {
+    g.append("text")
+      .attr("x", x0(sz) + x0.bandwidth() / 2)
+      .attr("y", innerHeight + 42)
+      .attr("text-anchor", "middle")
+      .attr("fill", COLORS.muted)
+      .attr("font-size", 11)
+      .text(sizeLabels[sz].replace(/^\S+ /, ""));
+  });
+
+  // Bars
+  const groups = g.selectAll("g.size-group")
+    .data(sizeOrder)
+    .join("g")
+    .attr("class", "size-group")
+    .attr("transform", sz => "translate(" + x0(sz) + ",0)");
+
+  groups.selectAll("rect.size-bar")
+    .data(sz => data.filter(d => d.size === sz))
     .join("rect")
-    .attr("x", d => x(d.size_emp))
-    .attr("y", d => y(d.ai_adoption_pct))
-    .attr("width", x.bandwidth())
-    .attr("height", d => innerHeight - y(d.ai_adoption_pct))
-    .attr("rx", 14)
-    .attr("fill", d => color(d.ai_adoption_pct))
-    .on("mouseenter", (event, d) => showTooltip(event, `<strong>${sizeLabels[d.size_emp].replace("\n", " · ")}</strong>IA: ${pct(d.ai_adoption_pct)}`))
+    .attr("class", "size-bar")
+    .attr("x", d => x1(d.group))
+    .attr("y", d => y(d.value))
+    .attr("width", x1.bandwidth())
+    .attr("height", d => innerHeight - y(d.value))
+    .attr("rx", 7)
+    .attr("fill", d => colorMap[d.group])
+    .attr("fill-opacity", d => d.group === "Portugal" ? 0.88 : 0.72)
+    .on("mouseenter", (event, d) => showTooltip(event,
+      "<strong>" + d.group + " · " + sizeLabels[d.size] + "</strong>" +
+      "Adoção de IA: " + pct(d.value)
+    ))
     .on("mousemove", moveTooltip)
     .on("mouseleave", hideTooltip);
 
-  g.selectAll("text.size-value")
-    .data(data)
+  // Value labels on top of bars
+  groups.selectAll("text.size-val")
+    .data(sz => data.filter(d => d.size === sz))
     .join("text")
-    .attr("x", d => x(d.size_emp) + x.bandwidth() / 2)
-    .attr("y", d => y(d.ai_adoption_pct) - 10)
+    .attr("class", "size-val")
+    .attr("x", d => x1(d.group) + x1.bandwidth() / 2)
+    .attr("y", d => y(d.value) - 6)
     .attr("text-anchor", "middle")
-    .attr("font-size", 18)
+    .attr("font-size", 12)
     .attr("font-weight", 900)
-    .attr("fill", COLORS.ink)
-    .text(d => pct(d.ai_adoption_pct));
+    .attr("fill", d => colorMap[d.group])
+    .text(d => pct(d.value));
 
-  if (total) {
-    g.append("line")
-      .attr("x1", 0)
-      .attr("x2", innerWidth)
-      .attr("y1", y(total.ai_adoption_pct))
-      .attr("y2", y(total.ai_adoption_pct))
-      .attr("stroke", COLORS.orange)
-      .attr("stroke-width", 2)
-      .attr("stroke-dasharray", "7 5");
-
+  // Gap annotations between bars for each size
+  sizeOrder.forEach(sz => {
+    const eu = data.find(d => d.size === sz && d.group === "UE27");
+    const pt = data.find(d => d.size === sz && d.group === "Portugal");
+    if (!eu || !pt) return;
+    const gap = pt.value - eu.value;
+    const midX = x0(sz) + x1("UE27") + (x1("Portugal") + x1.bandwidth() - x1("UE27")) / 2;
+    const topY = Math.min(y(eu.value), y(pt.value)) - 20;
     g.append("text")
-      .attr("x", innerWidth - 4)
-      .attr("y", y(total.ai_adoption_pct) - 8)
-      .attr("text-anchor", "end")
-      .attr("fill", COLORS.orange)
-      .attr("font-size", 12)
+      .attr("x", midX)
+      .attr("y", topY)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 10.5)
       .attr("font-weight", 900)
-      .text(`Média UE27 10+ · ${pct(total.ai_adoption_pct)}`);
-  }
+      .attr("fill", COLORS.red)
+      .text((gap >= 0 ? "+" : "") + gap.toFixed(1) + " p.p.");
+  });
+
+  // Legend
+  const legend = g.append("g").attr("transform", "translate(0,-32)");
+  ["UE27", "Portugal"].forEach((name, i) => {
+    const item = legend.append("g").attr("transform", "translate(" + (i * 106) + ",0)");
+    item.append("rect").attr("width", 12).attr("height", 12).attr("rx", 3).attr("fill", colorMap[name]);
+    item.append("text").attr("x", 18).attr("y", 11).attr("font-size", 12).attr("font-weight", 800)
+      .attr("fill", COLORS.muted).text(name);
+  });
 }
 
 function drawSectorChart(sectorData) {
@@ -814,7 +866,7 @@ function drawSectorChart(sectorData) {
   const y = d3.scaleBand().domain(data.map(d => d.nace_r2)).range([innerHeight, 0]).padding(0.22);
 
   addGridX(g, x, innerHeight);
-  g.append("g").attr("class", "axis").call(d3.axisLeft(y).tickFormat(code => sectorLabel(data.find(d => d.nace_r2 === code).nace_r2_label)));
+  g.append("g").attr("class", "axis").call(d3.axisLeft(y).tickFormat(code => sectorDisplay(data.find(d => d.nace_r2 === code))));
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x).ticks(6).tickFormat(d => `${d}%`));
 
   g.selectAll("rect.sector")
@@ -828,7 +880,7 @@ function drawSectorChart(sectorData) {
     .attr("fill", (d, i) => i >= data.length - 3 ? COLORS.blueDark : COLORS.blue)
     .attr("fill-opacity", (d, i) => 0.46 + i / data.length * 0.52)
     .on("mouseenter", (event, d) => showTooltip(event, `
-      <strong>${sectorLabel(d.nace_r2_label)}</strong>
+      <strong>${sectorDisplay(d)}</strong>
       Código NACE: ${d.nace_r2}<br />
       IA: ${pct(d.ai_adoption_pct)}<br />
       Rank no agregado UE: ${d.sector_rank_within_geo}
@@ -942,27 +994,143 @@ function drawPurposeChart(purposeData) {
 }
 
 function drawBarrierChart(barrierData) {
+  // PT vs EU27 lollipop side-by-side — mostra onde PT diverge da media europeia
   const eu = barrierData.filter(d => d.geo === "EU27_2020");
+  const pt = barrierData.filter(d => d.geo === "PT");
 
-  drawSimpleHorizontalBars("#barrier-chart", eu, {
-    labelMap: BARRIER_TRANSLATION,
-    color: COLORS.red,
-    height: 390,
-    marginLeft: 310,
-    marginBottom: 82,
-    maxDomain: 12,
-    tooltipUnit: "%",
-    labelMaxChars: 60
+  // Sort by EU value descending
+  const sortedBarriers = eu
+    .slice()
+    .sort((a, b) => d3.ascending(a.value, b.value))
+    .map(d => d.indicator_short_label);
+
+  const combined = sortedBarriers.map(label => {
+    const euRow = eu.find(d => d.indicator_short_label === label);
+    const ptRow = pt.find(d => d.indicator_short_label === label);
+    return {
+      label: BARRIER_TRANSLATION[label] || label,
+      eu: euRow ? euRow.value : 0,
+      pt: ptRow ? ptRow.value : 0,
+      diff: (ptRow ? ptRow.value : 0) - (euRow ? euRow.value : 0)
+    };
   });
 
-  d3.select("#barrier-chart svg")
-    .append("text")
-    .attr("x", 40)
-    .attr("y", 375)
+  const maxVal = d3.max(combined, d => Math.max(d.eu, d.pt)) * 1.12;
+
+  const { g, innerWidth, innerHeight } = createSvg("#barrier-chart", 1080, 400,
+    { top: 52, right: 36, bottom: 72, left: 290 });
+
+  const x = d3.scaleLinear().domain([0, maxVal]).nice().range([0, innerWidth]);
+  const y = d3.scaleBand().domain(combined.map(d => d.label)).range([innerHeight, 0]).padding(0.3);
+
+  addGridX(g, x, innerHeight);
+
+  g.append("g")
+    .attr("class", "axis")
+    .call(d3.axisLeft(y).tickSize(0))
+    .selectAll("text")
+    .attr("font-size", 12)
+    .attr("font-weight", d => {
+      const item = combined.find(c => c.label === d);
+      return (item && Math.abs(item.diff) > 2) ? 800 : 600;
+    })
+    .attr("fill", d => {
+      const item = combined.find(c => c.label === d);
+      return (item && item.diff > 2) ? COLORS.orange : COLORS.muted;
+    });
+
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0," + innerHeight + ")")
+    .call(d3.axisBottom(x).ticks(6).tickFormat(d => d + "%"));
+
+  // Connecting line between EU and PT dots
+  g.selectAll("line.connect")
+    .data(combined)
+    .join("line")
+    .attr("class", "connect")
+    .attr("x1", d => x(d.eu))
+    .attr("x2", d => x(d.pt))
+    .attr("y1", d => y(d.label) + y.bandwidth() / 2)
+    .attr("y2", d => y(d.label) + y.bandwidth() / 2)
+    .attr("stroke", d => d.diff >= 0 ? COLORS.orange : COLORS.green)
+    .attr("stroke-opacity", d => Math.abs(d.diff) >= 1.5 ? 0.95 : 0.42)
+    .attr("stroke-width", d => Math.abs(d.diff) >= 1.5 ? 2.2 : 1.2)
+    .attr("stroke-dasharray", d => d.diff <= 0 ? "none" : "none");
+
+  // EU dots
+  g.selectAll("circle.dot-eu")
+    .data(combined)
+    .join("circle")
+    .attr("class", "dot-eu")
+    .attr("cx", d => x(d.eu))
+    .attr("cy", d => y(d.label) + y.bandwidth() / 2)
+    .attr("r", 7)
+    .attr("fill", COLORS.blue)
+    .attr("fill-opacity", 0.80)
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 2)
+    .on("mouseenter", (event, d) => showTooltip(event,
+      "<strong>" + d.label + "</strong>" +
+      "UE27: " + pct(d.eu) + "<br/>Portugal: " + pct(d.pt) + "<br/>" +
+      "Diferenca PT\u2013UE: " + (d.diff >= 0 ? "+" : "") + d.diff.toFixed(1) + " p.p."
+    ))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  // PT dots — Portugal fica sempre a laranja para a legenda não ser ambígua.
+  g.selectAll("circle.dot-pt")
+    .data(combined)
+    .join("circle")
+    .attr("class", "dot-pt")
+    .attr("cx", d => x(d.pt))
+    .attr("cy", d => y(d.label) + y.bandwidth() / 2)
+    .attr("r", 7)
+    .attr("fill", COLORS.orange)
+    .attr("fill-opacity", 0.95)
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 2)
+    .on("mouseenter", (event, d) => showTooltip(event,
+      "<strong>" + d.label + "</strong>" +
+      "UE27: " + pct(d.eu) + "<br/>Portugal: " + pct(d.pt) + "<br/>" +
+      "Diferenca PT\u2013UE: " + (d.diff >= 0 ? "+" : "") + d.diff.toFixed(1) + " p.p."
+    ))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  // Diff label for high-diff items
+  g.selectAll("text.diff-label")
+    .data(combined.filter(d => Math.abs(d.diff) > 1.5))
+    .join("text")
+    .attr("class", "diff-label")
+    .attr("x", d => x(Math.max(d.eu, d.pt)) + 10)
+    .attr("y", d => y(d.label) + y.bandwidth() / 2 + 4)
+    .attr("font-size", 11)
+    .attr("font-weight", 900)
+    .attr("fill", d => d.diff > 0 ? COLORS.orange : COLORS.green)
+    .text(d => (d.diff > 0 ? "PT +" : "PT ") + d.diff.toFixed(1) + " p.p.");
+
+  // Legend
+  const legend = g.append("g").attr("transform", "translate(0,-36)");
+  [
+    { label: "UE27", color: COLORS.blue, r: 7 },
+    { label: "Portugal", color: COLORS.orange, r: 7 }
+  ].forEach((item, i) => {
+    const grp = legend.append("g").attr("transform", "translate(" + (i * 110) + ",0)");
+    grp.append("circle").attr("cx", 7).attr("cy", 0).attr("r", item.r)
+      .attr("fill", item.color).attr("fill-opacity", 0.85);
+    grp.append("text").attr("x", 20).attr("y", 4).attr("font-size", 12)
+      .attr("font-weight", 800).attr("fill", COLORS.muted).text(item.label);
+  });
+
+  // Footnote
+  g.append("text")
+    .attr("x", 0)
+    .attr("y", innerHeight + 58)
     .attr("fill", COLORS.muted)
     .attr("font-size", 11)
     .attr("font-weight", 700)
-    .text("Nota: percentagem calculada entre empresas que não usam tecnologias de IA.");
+    .text("Nota: percentagem calculada entre empresas que nao usam IA. A linha mostra a diferenca PT-UE.");
 }
 
 
@@ -1029,22 +1197,25 @@ function drawCorrelationChart(report) {
     .text("Correlação linear com adoção de IA nos países UE27");
 }
 
-function drawConversionGap(finalData) {
+function drawMaturityAiGap(finalData) {
+  // Top 10 paises com maior gap entre maturidade digital e adocao de IA
+  // digital_maturity_minus_ai_pp = digital_maturity_score_simple - ai_adoption_pct
   const data = finalData
     .filter(isEUCountry)
-    .sort((a, b) => d3.descending(a.cloud_data_but_no_ai_pct, b.cloud_data_but_no_ai_pct))
+    .filter(d => Number.isFinite(d.digital_maturity_minus_ai_pp) && Number.isFinite(d.ai_adoption_pct))
+    .sort((a, b) => d3.descending(a.digital_maturity_minus_ai_pp, b.digital_maturity_minus_ai_pp))
     .slice(0, 10)
     .reverse();
 
   const eu = finalData.find(isAggregate);
-  const { g, innerWidth, innerHeight } = createSvg("#conversion-gap", 560, 430, { top: 24, right: 52, bottom: 52, left: 128 });
-  const x = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.cloud_data_but_no_ai_pct) * 1.18])
-    .nice()
-    .range([0, innerWidth]);
+  const { g, innerWidth, innerHeight } = createSvg("#conversion-gap", 560, 430, { top: 28, right: 58, bottom: 52, left: 130 });
+
+  const maxGap = d3.max(data, d => d.digital_maturity_minus_ai_pp) * 1.18;
+  const x = d3.scaleLinear().domain([0, maxGap]).nice().range([0, innerWidth]);
   const y = d3.scaleBand().domain(data.map(d => d.geo)).range([innerHeight, 0]).padding(0.24);
 
   addGridX(g, x, innerHeight);
+
   g.append("g")
     .attr("class", "axis")
     .call(d3.axisLeft(y).tickFormat(code => `${code} · ${COUNTRY_SHORT[code] || code}`))
@@ -1055,65 +1226,69 @@ function drawConversionGap(finalData) {
   g.append("g")
     .attr("class", "axis")
     .attr("transform", `translate(0,${innerHeight})`)
-    .call(d3.axisBottom(x).ticks(5).tickFormat(d => `${d}%`));
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => `+${d} p.p.`));
 
-  if (eu) {
+  // Referencia EU27
+  if (eu && Number.isFinite(eu.digital_maturity_minus_ai_pp)) {
     g.append("line")
-      .attr("x1", x(eu.cloud_data_but_no_ai_pct))
-      .attr("x2", x(eu.cloud_data_but_no_ai_pct))
+      .attr("x1", x(eu.digital_maturity_minus_ai_pp))
+      .attr("x2", x(eu.digital_maturity_minus_ai_pp))
       .attr("y1", 0)
       .attr("y2", innerHeight)
       .attr("stroke", COLORS.red)
-      .attr("stroke-width", 2)
-      .attr("stroke-dasharray", "6 5");
+      .attr("stroke-width", 1.8)
+      .attr("stroke-dasharray", "6 4");
 
     g.append("text")
-      .attr("x", x(eu.cloud_data_but_no_ai_pct) + 6)
-      .attr("y", -8)
+      .attr("x", x(eu.digital_maturity_minus_ai_pp) + 5)
+      .attr("y", -10)
       .attr("fill", COLORS.red)
       .attr("font-size", 11)
       .attr("font-weight", 900)
-      .text(`UE27 ${pct(eu.cloud_data_but_no_ai_pct)}`);
+      .text("UE27 +" + eu.digital_maturity_minus_ai_pp.toFixed(1) + " p.p.");
   }
 
-  g.selectAll("rect.conversion")
+  // Barras do gap
+  g.selectAll("rect.gap-bar")
     .data(data)
     .join("rect")
-    .attr("class", "conversion")
+    .attr("class", "gap-bar")
     .attr("x", 0)
     .attr("y", d => y(d.geo))
-    .attr("width", d => x(d.cloud_data_but_no_ai_pct))
+    .attr("width", d => x(d.digital_maturity_minus_ai_pp))
     .attr("height", y.bandwidth())
     .attr("rx", y.bandwidth() / 2)
     .attr("fill", d => d.geo === "PT" ? COLORS.orange : COLORS.amber)
-    .attr("fill-opacity", d => d.geo === "PT" ? 0.95 : 0.72)
-    .on("mouseenter", (event, d) => showTooltip(event, `
-      <strong>${shortCountry(d)}</strong>
-      Cloud + data analytics mas sem IA: ${pct(d.cloud_data_but_no_ai_pct)}<br />
-      Adoção de IA: ${pct(d.ai_adoption_pct)}<br />
-      Cloud: ${pct(d.cloud_use_pct)} · Data analytics: ${pct(d.data_analytics_pct)}
-    `))
+    .attr("fill-opacity", d => d.geo === "PT" ? 0.92 : 0.68)
+    .on("mouseenter", (event, d) => showTooltip(event,
+      "<strong>" + (COUNTRY_SHORT[d.geo] || d.geo) + "</strong>" +
+      "Gap maturidade→IA: +" + d.digital_maturity_minus_ai_pp.toFixed(1) + " p.p.<br/>" +
+      "Score maturidade digital: " + pct(d.digital_maturity_score_simple) + "<br/>" +
+      "Adoção de IA: " + pct(d.ai_adoption_pct) + "<br/>" +
+      "<em>Potencial digital ainda não convertido em IA</em>"
+    ))
     .on("mousemove", moveTooltip)
     .on("mouseleave", hideTooltip);
 
-  g.selectAll("text.conversion-value")
+  // Valores no fim das barras
+  g.selectAll("text.gap-value")
     .data(data)
     .join("text")
-    .attr("x", d => x(d.cloud_data_but_no_ai_pct) + 7)
+    .attr("x", d => x(d.digital_maturity_minus_ai_pp) + 6)
     .attr("y", d => y(d.geo) + y.bandwidth() / 2 + 4)
     .attr("fill", COLORS.muted)
     .attr("font-size", 12)
     .attr("font-weight", 900)
-    .text(d => pct(d.cloud_data_but_no_ai_pct));
+    .text(d => "+" + d.digital_maturity_minus_ai_pp.toFixed(1));
 
   g.append("text")
     .attr("x", innerWidth / 2)
-    .attr("y", innerHeight + 40)
+    .attr("y", innerHeight + 42)
     .attr("text-anchor", "middle")
     .attr("fill", COLORS.muted)
     .attr("font-size", 12)
     .attr("font-weight", 800)
-    .text("Empresas com cloud + data analytics, mas sem IA (%)");
+    .text("Gap entre score de maturidade digital e adoção de IA (p.p.)");
 }
 
 function drawAIDepth(finalData) {
@@ -1229,7 +1404,7 @@ async function init() {
     drawSizeChart(sizeData);
     drawSectorChart(sectorData);
     drawCorrelationChart(report);
-    drawConversionGap(finalData);
+    drawMaturityAiGap(finalData);
     drawAIDepth(finalData);
     drawTechnologyChart(techData);
     drawPurposeChart(purposeData);
