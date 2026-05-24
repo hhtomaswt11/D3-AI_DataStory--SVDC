@@ -35,7 +35,6 @@ Não abrir o ficheiro `index.html` diretamente com duplo clique, porque o navega
 index.html
 css/style.css
 js/main.js
-js/d3.v7.min.js
 package.json
 README.md
 data/*.csv
@@ -54,6 +53,14 @@ A pasta `data/` deve manter os CSVs já gerados:
 ## Pergunta de investigação
 
 Em 2025, a utilização de Inteligência Artificial nas empresas europeias está mais associada à maturidade digital global, ao uso de cloud ou à capacidade de análise de dados?
+
+## Melhorias adicionadas
+
+Além dos gráficos principais, o poster inclui agora um bloco de diagnóstico analítico com:
+
+- correlações entre IA e indicadores de maturidade digital;
+- países com capacidade digital ainda não convertida em IA;
+- profundidade de adoção de IA, comparando 1+, 2+ e 3+ tecnologias.
 
 ## Fonte
 

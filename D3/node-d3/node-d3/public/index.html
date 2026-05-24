@@ -7,7 +7,6 @@
   <meta name="description" content="Poster D3.js sobre adoção de IA, maturidade digital, cloud, data analytics, setores e barreiras nas empresas europeias em 2025." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -71,12 +70,13 @@
         <span class="strip-label">Percurso de leitura</span>
         <h2>Da distribuição territorial à explicação estrutural</h2>
       </div>
-      <p>O poster começa por localizar a adoção de IA, depois testa a associação com maturidade digital, e termina mostrando quem adota, onde a IA se concentra e que barreiras persistem.</p>
+      <p>O poster começa por localizar a adoção de IA, testa a associação com maturidade digital, identifica capacidade digital ainda não convertida em IA e termina mostrando quem adota, onde a IA se concentra e que barreiras persistem.</p>
       <ol>
         <li><span>01</span> Onde?</li>
         <li><span>02</span> Com que condições digitais?</li>
-        <li><span>03</span> Em que empresas e setores?</li>
-        <li><span>04</span> Com que usos e barreiras?</li>
+        <li><span>03</span> Que potencial não convertido?</li>
+        <li><span>04</span> Em que empresas e setores?</li>
+        <li><span>05</span> Com que usos e barreiras?</li>
       </ol>
     </section>
 
@@ -159,9 +159,60 @@
       </div>
     </section>
 
+    <section class="visual-section section-diagnostic">
+      <div class="section-head">
+        <span>03 · Diagnóstico analítico</span>
+        <h2>Nem toda a maturidade digital se transforma automaticamente em IA</h2>
+        <p>Para enriquecer a leitura, este bloco compara fatores associados à adoção, identifica países com infraestrutura digital ainda não convertida em IA e distingue adoção simples de adoção mais profunda.</p>
+      </div>
+      <div class="story-grid analysis-layout">
+        <article class="panel correlation-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">05</p>
+              <h3>O que está mais associado à adoção de IA?</h3>
+            </div>
+            <p>Comparação das correlações entre adoção de IA e indicadores de maturidade digital nos países UE27.</p>
+          </div>
+          <div id="correlation-chart" class="chart chart-correlation"></div>
+          <div class="insight-box">
+            <strong>Leitura:</strong> a intensidade digital muito alta apresenta a associação mais forte com a adoção de IA, acima do uso isolado de cloud ou data analytics.
+          </div>
+        </article>
+
+        <article class="panel conversion-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">06</p>
+              <h3>Capacidade digital ainda não convertida</h3>
+            </div>
+            <p>Países com empresas que usam cloud e data analytics, mas ainda não usam IA.</p>
+          </div>
+          <div id="conversion-gap" class="chart chart-conversion"></div>
+          <div class="insight-box">
+            <strong>Leitura:</strong> estes países têm base digital relevante, mas parte dessa capacidade ainda não se traduz em adoção de IA.
+          </div>
+        </article>
+
+        <article class="panel depth-panel chart-card">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-number">07</p>
+              <h3>Adoção simples ou adoção intensiva?</h3>
+            </div>
+            <p>Comparação entre usar pelo menos uma tecnologia de IA, duas ou mais, e três ou mais tecnologias.</p>
+          </div>
+          <div id="ai-depth" class="chart chart-depth"></div>
+          <div class="insight-box">
+            <strong>Leitura:</strong> nos países líderes, a adoção tende a ser mais profunda: não é apenas “usar IA”, mas combinar várias tecnologias de IA.
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="visual-section">
       <div class="section-head">
-        <span>03 · Estrutura empresarial</span>
+        <span>04 · Estrutura empresarial</span>
         <h2>A adoção não é homogénea: escala e setor importam</h2>
         <p>A IA é mais frequente nas grandes empresas e nos setores intensivos em informação, programação, investigação e comunicação.</p>
       </div>
@@ -169,7 +220,7 @@
         <article class="panel size-panel chart-card">
           <div class="panel-heading compact">
             <div>
-              <p class="section-number">05</p>
+              <p class="section-number">08</p>
               <h3>A escala empresarial importa</h3>
             </div>
             <p>A adoção de IA aumenta fortemente com a dimensão da empresa.</p>
@@ -183,7 +234,7 @@
         <article class="panel sector-panel chart-card chart-card-large">
           <div class="panel-heading">
             <div>
-              <p class="section-number">06</p>
+              <p class="section-number">09</p>
               <h3>Setores onde a IA está mais concentrada</h3>
             </div>
             <p>Top setores da UE27 por percentagem de empresas que usam IA.</p>
@@ -195,7 +246,7 @@
 
     <section class="visual-section">
       <div class="section-head">
-        <span>04 · Usos, tecnologias e barreiras</span>
+        <span>05 · Usos, tecnologias e barreiras</span>
         <h2>Que IA é usada, para quê, e o que ainda trava a adoção?</h2>
         <p>O bloco final fecha a narrativa: não basta saber quem usa IA; é preciso perceber que tecnologias entram nas empresas e que obstáculos permanecem.</p>
       </div>
@@ -203,7 +254,7 @@
         <article class="panel tech-panel chart-card">
           <div class="panel-heading compact">
             <div>
-              <p class="section-number">07</p>
+              <p class="section-number">10</p>
               <h3>Tecnologias de IA mais usadas</h3>
             </div>
             <p>As tecnologias ligadas a texto, geração e automatização dominam o retrato europeu.</p>
@@ -214,7 +265,7 @@
         <article class="panel purpose-panel chart-card">
           <div class="panel-heading compact">
             <div>
-              <p class="section-number">08</p>
+              <p class="section-number">11</p>
               <h3>Finalidades de uso</h3>
             </div>
             <p>As finalidades mais visíveis estão ligadas a vendas, gestão e processos internos.</p>
@@ -225,7 +276,7 @@
         <article class="panel barrier-panel chart-card chart-card-wide">
           <div class="panel-heading">
             <div>
-              <p class="section-number">09</p>
+              <p class="section-number">12</p>
               <h3>Barreiras à adoção</h3>
             </div>
             <p>Barreiras reportadas entre empresas que não utilizam tecnologias de IA.</p>

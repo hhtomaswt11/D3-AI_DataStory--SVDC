@@ -965,6 +965,235 @@ function drawBarrierChart(barrierData) {
     .text("Nota: percentagem calculada entre empresas que não usam tecnologias de IA.");
 }
 
+
+
+function drawCorrelationChart(report) {
+  const corr = report?.correlations_eu27_only || {};
+  const data = [
+    { label: "Intensidade digital muito alta", value: corr.corr_ai_vs_dii_very_high_pct, color: COLORS.blueDark },
+    { label: "Intensidade digital básica+", value: corr.corr_ai_vs_dii_at_least_basic_pct, color: COLORS.blue },
+    { label: "Intensidade digital alta", value: corr.corr_ai_vs_dii_high_pct, color: COLORS.blue },
+    { label: "Score de maturidade digital", value: corr.corr_ai_vs_digital_maturity_score_simple, color: COLORS.cyan },
+    { label: "Uso de cloud", value: corr.corr_ai_vs_cloud_use_pct, color: COLORS.orange },
+    { label: "Data analytics", value: corr.corr_ai_vs_data_analytics_pct, color: COLORS.green }
+  ]
+    .filter(d => Number.isFinite(+d.value))
+    .sort((a, b) => d3.ascending(a.value, b.value));
+
+  const { g, innerWidth, innerHeight } = createSvg("#correlation-chart", 560, 430, { top: 24, right: 48, bottom: 54, left: 212 });
+  const x = d3.scaleLinear().domain([0, 1]).range([0, innerWidth]);
+  const y = d3.scaleBand().domain(data.map(d => d.label)).range([innerHeight, 0]).padding(0.26);
+
+  addGridX(g, x, innerHeight);
+  g.append("g")
+    .attr("class", "axis")
+    .call(d3.axisLeft(y).tickSize(0));
+
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0,${innerHeight})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => d3.format(".1f")(d).replace(".", ",")));
+
+  g.selectAll("rect.corr-bar")
+    .data(data)
+    .join("rect")
+    .attr("class", "corr-bar")
+    .attr("x", 0)
+    .attr("y", d => y(d.label))
+    .attr("width", d => x(d.value))
+    .attr("height", y.bandwidth())
+    .attr("rx", y.bandwidth() / 2)
+    .attr("fill", d => d.color)
+    .attr("fill-opacity", 0.86)
+    .on("mouseenter", (event, d) => showTooltip(event, `<strong>${d.label}</strong>Correlação com adoção de IA: ${fmt.corr(d.value).replace(".", ",")}`))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  g.selectAll("text.corr-value")
+    .data(data)
+    .join("text")
+    .attr("x", d => x(d.value) + 8)
+    .attr("y", d => y(d.label) + y.bandwidth() / 2 + 4)
+    .attr("fill", COLORS.ink)
+    .attr("font-size", 13)
+    .attr("font-weight", 900)
+    .text(d => fmt.corr(d.value).replace(".", ","));
+
+  g.append("text")
+    .attr("x", innerWidth / 2)
+    .attr("y", innerHeight + 42)
+    .attr("text-anchor", "middle")
+    .attr("fill", COLORS.muted)
+    .attr("font-size", 12)
+    .attr("font-weight", 800)
+    .text("Correlação linear com adoção de IA nos países UE27");
+}
+
+function drawConversionGap(finalData) {
+  const data = finalData
+    .filter(isEUCountry)
+    .sort((a, b) => d3.descending(a.cloud_data_but_no_ai_pct, b.cloud_data_but_no_ai_pct))
+    .slice(0, 10)
+    .reverse();
+
+  const eu = finalData.find(isAggregate);
+  const { g, innerWidth, innerHeight } = createSvg("#conversion-gap", 560, 430, { top: 24, right: 52, bottom: 52, left: 128 });
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.cloud_data_but_no_ai_pct) * 1.18])
+    .nice()
+    .range([0, innerWidth]);
+  const y = d3.scaleBand().domain(data.map(d => d.geo)).range([innerHeight, 0]).padding(0.24);
+
+  addGridX(g, x, innerHeight);
+  g.append("g")
+    .attr("class", "axis")
+    .call(d3.axisLeft(y).tickFormat(code => `${code} · ${COUNTRY_SHORT[code] || code}`))
+    .selectAll("text")
+    .attr("font-weight", d => d === "PT" ? 900 : 650)
+    .attr("fill", d => d === "PT" ? COLORS.orange : COLORS.muted);
+
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0,${innerHeight})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => `${d}%`));
+
+  if (eu) {
+    g.append("line")
+      .attr("x1", x(eu.cloud_data_but_no_ai_pct))
+      .attr("x2", x(eu.cloud_data_but_no_ai_pct))
+      .attr("y1", 0)
+      .attr("y2", innerHeight)
+      .attr("stroke", COLORS.red)
+      .attr("stroke-width", 2)
+      .attr("stroke-dasharray", "6 5");
+
+    g.append("text")
+      .attr("x", x(eu.cloud_data_but_no_ai_pct) + 6)
+      .attr("y", -8)
+      .attr("fill", COLORS.red)
+      .attr("font-size", 11)
+      .attr("font-weight", 900)
+      .text(`UE27 ${pct(eu.cloud_data_but_no_ai_pct)}`);
+  }
+
+  g.selectAll("rect.conversion")
+    .data(data)
+    .join("rect")
+    .attr("class", "conversion")
+    .attr("x", 0)
+    .attr("y", d => y(d.geo))
+    .attr("width", d => x(d.cloud_data_but_no_ai_pct))
+    .attr("height", y.bandwidth())
+    .attr("rx", y.bandwidth() / 2)
+    .attr("fill", d => d.geo === "PT" ? COLORS.orange : COLORS.amber)
+    .attr("fill-opacity", d => d.geo === "PT" ? 0.95 : 0.72)
+    .on("mouseenter", (event, d) => showTooltip(event, `
+      <strong>${shortCountry(d)}</strong>
+      Cloud + data analytics mas sem IA: ${pct(d.cloud_data_but_no_ai_pct)}<br />
+      Adoção de IA: ${pct(d.ai_adoption_pct)}<br />
+      Cloud: ${pct(d.cloud_use_pct)} · Data analytics: ${pct(d.data_analytics_pct)}
+    `))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  g.selectAll("text.conversion-value")
+    .data(data)
+    .join("text")
+    .attr("x", d => x(d.cloud_data_but_no_ai_pct) + 7)
+    .attr("y", d => y(d.geo) + y.bandwidth() / 2 + 4)
+    .attr("fill", COLORS.muted)
+    .attr("font-size", 12)
+    .attr("font-weight", 900)
+    .text(d => pct(d.cloud_data_but_no_ai_pct));
+
+  g.append("text")
+    .attr("x", innerWidth / 2)
+    .attr("y", innerHeight + 40)
+    .attr("text-anchor", "middle")
+    .attr("fill", COLORS.muted)
+    .attr("font-size", 12)
+    .attr("font-weight", 800)
+    .text("Empresas com cloud + data analytics, mas sem IA (%)");
+}
+
+function drawAIDepth(finalData) {
+  const wanted = ["EU27_2020", "PT", "DK", "FI", "SE", "RO"];
+  const data = wanted
+    .map(code => finalData.find(d => d.geo === code))
+    .filter(Boolean);
+
+  const series = [
+    { key: "ai_adoption_pct", label: "1+ tecnologia", color: COLORS.blue },
+    { key: "ai_two_or_more_technologies_pct", label: "2+ tecnologias", color: COLORS.purple },
+    { key: "ai_three_or_more_technologies_pct", label: "3+ tecnologias", color: COLORS.orange }
+  ];
+
+  const { g, innerWidth, innerHeight } = createSvg("#ai-depth", 560, 430, { top: 54, right: 42, bottom: 52, left: 116 });
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.ai_adoption_pct) * 1.12])
+    .nice()
+    .range([0, innerWidth]);
+  const y = d3.scaleBand().domain(data.map(d => d.geo)).range([0, innerHeight]).padding(0.22);
+  const innerBand = d3.scaleBand().domain(series.map(s => s.key)).range([0, y.bandwidth()]).padding(0.16);
+
+  addGridX(g, x, innerHeight);
+  g.append("g")
+    .attr("class", "axis")
+    .call(d3.axisLeft(y).tickFormat(code => COUNTRY_SHORT[code] || code));
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0,${innerHeight})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => `${d}%`));
+
+  const groups = g.selectAll("g.depth-row")
+    .data(data)
+    .join("g")
+    .attr("class", "depth-row")
+    .attr("transform", d => `translate(0,${y(d.geo)})`);
+
+  groups.selectAll("rect.depth-bar")
+    .data(d => series.map(s => ({ ...s, geo: d.geo, country: shortCountry(d), value: d[s.key] })))
+    .join("rect")
+    .attr("class", "depth-bar")
+    .attr("x", 0)
+    .attr("y", d => innerBand(d.key))
+    .attr("width", d => x(d.value))
+    .attr("height", innerBand.bandwidth())
+    .attr("rx", innerBand.bandwidth() / 2)
+    .attr("fill", d => d.color)
+    .attr("fill-opacity", 0.82)
+    .on("mouseenter", (event, d) => showTooltip(event, `<strong>${d.country}</strong>${d.label}: ${pct(d.value)}`))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  groups.selectAll("text.depth-value")
+    .data(d => series.map(s => ({ ...s, geo: d.geo, value: d[s.key] })))
+    .join("text")
+    .attr("class", "depth-value")
+    .attr("x", d => x(d.value) + 6)
+    .attr("y", d => innerBand(d.key) + innerBand.bandwidth() / 2 + 4)
+    .attr("fill", COLORS.muted)
+    .attr("font-size", 10.5)
+    .attr("font-weight", 900)
+    .text(d => pct(d.value));
+
+  const legend = g.append("g").attr("transform", "translate(0,-36)");
+  series.forEach((s, i) => {
+    const item = legend.append("g").attr("transform", `translate(${i * 132},0)`);
+    item.append("rect").attr("width", 12).attr("height", 12).attr("rx", 3).attr("fill", s.color);
+    item.append("text").attr("x", 18).attr("y", 11).attr("font-size", 11).attr("font-weight", 850).attr("fill", COLORS.muted).text(s.label);
+  });
+
+  g.append("text")
+    .attr("x", innerWidth / 2)
+    .attr("y", innerHeight + 40)
+    .attr("text-anchor", "middle")
+    .attr("fill", COLORS.muted)
+    .attr("font-size", 12)
+    .attr("font-weight", 800)
+    .text("Empresas por profundidade de adoção de tecnologias de IA (%)");
+}
+
 async function init() {
   setLoading();
 
@@ -999,6 +1228,9 @@ async function init() {
     drawPortugalVsEU(finalData);
     drawSizeChart(sizeData);
     drawSectorChart(sectorData);
+    drawCorrelationChart(report);
+    drawConversionGap(finalData);
+    drawAIDepth(finalData);
     drawTechnologyChart(techData);
     drawPurposeChart(purposeData);
     drawBarrierChart(barrierData);
