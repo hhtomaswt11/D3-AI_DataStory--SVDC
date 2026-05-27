@@ -711,9 +711,9 @@ body {
 }
 
 .chart-map        { min-height: 760px; }
-.chart-ranking    { min-height: 650px; }
+.chart-ranking    { min-height: 760px; }
 .chart-scatter    { min-height: 660px; }
-.chart-compare    { min-height: 430px; }
+.chart-compare    { min-height: 620px; }
 .chart-size       { min-height: 440px; }
 .chart-sector     { min-height: 560px; }
 .chart-tech       { min-height: 500px; }
@@ -1904,4 +1904,17 @@ body::after {
     background: none;
     -webkit-text-fill-color: initial;
   }
+}
+
+
+/* Ajuste específico: Ranking UE27 mais alto no bloco da direita */
+.ranking-panel .chart-ranking {
+  min-height: 760px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ranking-panel .chart-ranking svg {
+  width: 100%;
+  height: auto;
 }

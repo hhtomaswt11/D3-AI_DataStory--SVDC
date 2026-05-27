@@ -81,12 +81,12 @@ const LABELS = {
 const TECH_TRANSLATION = {
   "Text mining": "Text mining",
   "Speech recognition": "Reconhecimento de fala",
-  "Generative pictures / video / sound": "Geração de imagem/vídeo/som",
-  "Natural language generation / code generation": "Geração de linguagem/código",
+  "Generative pictures / video / sound": "Geração de imagem / vídeo / som",
+  "Natural language generation / code generation": "Geração de linguagem / código",
   "Workflow automation / decision support": "Automação / apoio à decisão",
   "Machine learning for data analysis": "Machine learning para dados",
   "Image recognition / image processing": "Reconhecimento de imagem",
-  "Autonomous robots / vehicles / drones": "Robôs/veículos/drones autónomos"
+  "Autonomous robots / vehicles / drones": "Robôs / veículos / drones autónomos"
 };
 
 const PURPOSE_TRANSLATION = {
@@ -112,15 +112,15 @@ const BARRIER_TRANSLATION = {
 
 const SECTOR_SHORTEN = [
   [/Computer programming, consultancy, and information service activities/i, "Programação e serviços de informação"],
-  [/Information and Communication Technology - total/i, "TIC · total"],
+  [/Information and Communication Technology - total/i, "TIC"],
   [/Information and communication/i, "Informação e comunicação"],
   [/Publishing, motion picture.*broadcasting activities/i, "Media, audiovisual e broadcasting"],
   [/Scientific research and development/i, "Investigação científica e desenvolvimento"],
   [/Advertising and market research.*veterinary activities/i, "Publicidade, investigação de mercado e técnicos"],
   [/Manufacture of basic pharmaceutical products.*/i, "Indústria farmacêutica"],
-  [/Professional, scientific and technical activities/i, "Atividades profissionais e científicas"],
+  [/Professional, scientific and technical activities/i, "Atividades profissionais / científicas"],
   [/Telecommunications/i, "Telecomunicações"],
-  [/Real estate activities.*scientific and technical activities/i, "Imobiliário + profissionais/científicas"],
+  [/Real estate activities.*scientific and technical activities/i, "Imobiliário e serviços profissionais"],
   [/Legal and accounting activities.*technical testing and analysis/i, "Jurídico, contabilidade, engenharia e consultoria"],
   [/Manufacture of computer, electronic and optical products/i, "Equipamento informático/eletrónico/ótico"],
   [/Electricity, gas, steam and air conditioning supply/i, "Energia"],
@@ -139,14 +139,14 @@ function sectorLabel(label) {
 const SECTOR_CODE_LABELS = {
   "J62_J63": "Programação e serviços de informação",
   "J": "Informação e comunicação",
-  "ICT": "TIC · total",
+  "ICT": "TIC",
   "J58-J60": "Media, audiovisual e broadcasting",
   "M72": "Investigação científica e desenvolvimento",
   "M73-M75": "Publicidade, mercado e técnicos",
   "C21": "Indústria farmacêutica",
-  "M": "Ativ. profissionais/científicas · total",
+  "M": "Atividades profissionais / científicas",
   "J61": "Telecomunicações",
-  "L_M": "Imobiliário + serv. profissionais",
+  "L_M": "Imobiliário e serviços profissionais",
   "M69-M71": "Jurídico, contabilidade e engenharia",
   "C26": "Equipamento informático/eletrónico",
   "D": "Energia · total",
@@ -435,7 +435,7 @@ function drawTileMap(finalData) {
 function drawCountryRanking(finalData) {
   const data = finalData.filter(isEUCountry).sort((a, b) => d3.descending(a.ai_adoption_pct, b.ai_adoption_pct));
   const eu = finalData.find(isAggregate);
-  const { g, innerWidth, innerHeight } = createSvg("#country-ranking", 560, 620, { top: 48, right: 42, bottom: 40, left: 132 });
+  const { g, innerWidth, innerHeight } = createSvg("#country-ranking", 560, 1000, { top: 74, right: 52, bottom: 64, left: 142 });
 
   const x = d3.scaleLinear()
     .domain([0, d3.max(data, d => d.ai_adoption_pct) * 1.08])
@@ -444,7 +444,7 @@ function drawCountryRanking(finalData) {
   const y = d3.scaleBand()
     .domain(data.map(d => d.geo))
     .range([0, innerHeight])
-    .padding(0.21);
+    .padding(0.18);
 
   addGridX(g, x, innerHeight);
 
@@ -470,7 +470,7 @@ function drawCountryRanking(finalData) {
     .attr("stroke-dasharray", "6 5");
 
   const meanLabel = g.append("g")
-    .attr("transform", `translate(${x(eu.ai_adoption_pct)}, -18)`);
+    .attr("transform", `translate(${x(eu.ai_adoption_pct)}, -26)`);
 
   meanLabel.append("rect")
     .attr("x", -54)
@@ -777,9 +777,11 @@ function drawPortugalVsEU(finalData) {
     { metric: label, group: "Portugal", value: pt[key] }
   ]);
 
-  const { g, innerWidth, innerHeight } = createSvg("#pt-vs-eu", 560, 390, { top: 24, right: 18, bottom: 58, left: 52 });
-  const x0 = d3.scaleBand().domain(metrics.map(d => d[0])).range([0, innerWidth]).padding(0.28);
-  const x1 = d3.scaleBand().domain(["UE27", "Portugal"]).range([0, x0.bandwidth()]).padding(0.12);
+  // Gráfico mais alto para preencher melhor o painel lateral.
+  // Mantém a largura original, mas aumenta bastante a altura útil do eixo Y.
+  const { g, innerWidth, innerHeight } = createSvg("#pt-vs-eu", 560, 650, { top: 42, right: 24, bottom: 72, left: 58 });
+  const x0 = d3.scaleBand().domain(metrics.map(d => d[0])).range([0, innerWidth]).padding(0.24);
+  const x1 = d3.scaleBand().domain(["UE27", "Portugal"]).range([0, x0.bandwidth()]).padding(0.10);
   const y = d3.scaleLinear().domain([0, 80]).range([innerHeight, 0]);
   const color = d3.scaleOrdinal().domain(["UE27", "Portugal"]).range([COLORS.blue, COLORS.orange]);
 
@@ -1046,9 +1048,10 @@ function drawTechnologyChart(techData) {
     labelMap: TECH_TRANSLATION,
     color: COLORS.purple,
     height: 420,
-    marginLeft: 235,
+    marginLeft: 275,
     maxDomain: 13,
-    tooltipUnit: "%"
+    tooltipUnit: "%",
+    labelMaxChars: 42
   });
 }
 
