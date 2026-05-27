@@ -948,9 +948,8 @@ body {
    ANÁLISE (secção diagnóstico — 3 colunas)
 —————————————————————————————————————— */
 
-.analysis-layout .correlation-panel,
 .analysis-layout .conversion-panel,
-.analysis-layout .depth-panel { grid-column: span 4; }
+.analysis-layout .depth-panel { grid-column: span 6; }
 
 /* ——————————————————————————————————————
    DECORAÇÃO EXTRA: separadores de secção
@@ -1032,7 +1031,6 @@ body {
   .usage-layout .tech-panel,
   .usage-layout .purpose-panel,
   .usage-layout .barrier-panel,
-  .analysis-layout .correlation-panel,
   .analysis-layout .conversion-panel,
   .analysis-layout .depth-panel { grid-column: span 12; }
   .conclusion-panel { grid-template-columns: 1fr; }

@@ -524,11 +524,6 @@ function drawCountryRanking(finalData) {
 function drawScatterMaturity(finalData) {
   const data = finalData.filter(isEUCountry);
 
-  // Versão revista para reduzir sobreposição visual:
-  // - área do gráfico ligeiramente maior;
-  // - bolhas mais pequenas;
-  // - linha de tendência recortada à área do gráfico;
-  // - labels com offsets manuais e halo branco para melhorar legibilidade.
   const { svg, g, innerWidth, innerHeight, margin } = createSvg(
     "#scatter-maturity",
     940,
@@ -546,19 +541,29 @@ function drawScatterMaturity(finalData) {
     .nice()
     .range([innerHeight, 0]);
 
+  // Tamanho → uso de cloud; raio mínimo 6 para que países como RO (cloud baixo) fiquem visíveis
   const r = d3.scaleSqrt()
     .domain(d3.extent(data, d => d.cloud_use_pct))
-    .range([4.5, 14]);
+    .range([6, 16]);
 
+  // Cor → data analytics (escala sequencial azul)
+  const colorAnalytics = d3.scaleSequential()
+    .domain(d3.extent(data, d => d.data_analytics_pct))
+    .interpolator(d3.interpolate("#c6dbef", "#08519c"));
+
+  // Clip generoso no sistema de coordenadas do plotArea.
+  // Como plotArea já está dentro do grupo `g` transladado pelas margens,
+  // o retângulo do clip deve começar em valores negativos. Assim, pontos
+  // encostados ao eixo esquerdo, como a Roménia, deixam de ficar cortados.
   const clipId = "clip-scatter-maturity";
-  svg.append("defs")
-    .append("clipPath")
+  const defs = svg.append("defs");
+  defs.append("clipPath")
     .attr("id", clipId)
     .append("rect")
-    .attr("x", margin.left)
-    .attr("y", margin.top)
-    .attr("width", innerWidth)
-    .attr("height", innerHeight);
+    .attr("x", -28)
+    .attr("y", -28)
+    .attr("width", innerWidth + 56)
+    .attr("height", innerHeight + 56);
 
   addGridY(g, y, innerWidth);
   addGridX(g, x, innerHeight);
@@ -593,6 +598,7 @@ function drawScatterMaturity(finalData) {
 
   const plotArea = g.append("g").attr("clip-path", `url(#${clipId})`);
 
+  // Linha de tendência
   const reg = linearRegression(data, d => d.dii_very_high_pct, d => d.ai_adoption_pct);
   const xDomain = x.domain();
   const regLine = [
@@ -609,17 +615,18 @@ function drawScatterMaturity(finalData) {
     .attr("opacity", 0.95)
     .attr("d", d3.line().x(d => x(d.x)).y(d => y(d.y)));
 
-  plotArea.selectAll("circle.point")
-    .data(data)
+  // Todos os países (excl. PT): fill = data analytics, stroke branco
+  plotArea.selectAll("circle.point-normal")
+    .data(data.filter(d => d.geo !== "PT"))
     .join("circle")
-    .attr("class", "point")
+    .attr("class", "point-normal")
     .attr("cx", d => x(d.dii_very_high_pct))
     .attr("cy", d => y(d.ai_adoption_pct))
     .attr("r", d => r(d.cloud_use_pct))
-    .attr("fill", d => d.geo === "PT" ? COLORS.orange : COLORS.blue)
-    .attr("fill-opacity", d => d.geo === "PT" ? 0.95 : 0.62)
-    .attr("stroke", "#fff")
-    .attr("stroke-width", d => d.geo === "PT" ? 2.6 : 2)
+    .attr("fill", d => colorAnalytics(d.data_analytics_pct))
+    .attr("fill-opacity", 0.85)
+    .attr("stroke", "rgba(255,255,255,0.8)")
+    .attr("stroke-width", 1.6)
     .on("mouseenter", (event, d) => showTooltip(event, `
       <strong>${shortCountry(d)}</strong>
       IA: ${pct(d.ai_adoption_pct)}<br />
@@ -630,13 +637,38 @@ function drawScatterMaturity(finalData) {
     .on("mousemove", moveTooltip)
     .on("mouseleave", hideTooltip);
 
+  // Portugal: mesmo encoding (cor = analytics, tamanho = cloud), borda laranja fina
+  const ptData = data.filter(d => d.geo === "PT");
+  plotArea.selectAll("circle.point-pt")
+    .data(ptData)
+    .join("circle")
+    .attr("class", "point-pt")
+    .attr("cx", d => x(d.dii_very_high_pct))
+    .attr("cy", d => y(d.ai_adoption_pct))
+    .attr("r", d => r(d.cloud_use_pct))
+    .attr("fill", d => colorAnalytics(d.data_analytics_pct))
+    .attr("fill-opacity", 0.95)
+    .attr("stroke", COLORS.orange)
+    .attr("stroke-width", 2.1)
+    .on("mouseenter", (event, d) => showTooltip(event, `
+      <strong>${shortCountry(d)}</strong>
+      IA: ${pct(d.ai_adoption_pct)}<br />
+      Intensidade digital muito alta: ${pct(d.dii_very_high_pct)}<br />
+      Cloud: ${pct(d.cloud_use_pct)}<br />
+      Data analytics: ${pct(d.data_analytics_pct)}
+    `))
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip);
+
+  // Labels: PT, DK, FI, SE, RO, LU, BE
   const labelOffsets = {
     PT: [12, -10],
     DK: [14, 2],
     FI: [12, 12],
     SE: [12, -10],
     RO: [12, 8],
-    LU: [12, -10]
+    LU: [12, -10],
+    BE: [16, -14]    // BE afastado para fora da bolha da Bélgica
   };
   const labels = new Set(Object.keys(labelOffsets));
 
@@ -655,40 +687,79 @@ function drawScatterMaturity(finalData) {
     .attr("fill", d => d.geo === "PT" ? COLORS.orange : COLORS.ink)
     .text(d => d.geo);
 
-  const legend = g.append("g").attr("transform", `translate(${innerWidth - 188},${innerHeight - 88})`);
+  // ── Legenda (canto inferior direito) ──────────────────────────────────────
+  const legendW = 226, legendH = 130;
+  const legend = g.append("g").attr("transform", `translate(${innerWidth - legendW - 4},${innerHeight - legendH - 4})`);
+
   legend.append("rect")
-    .attr("width", 178)
-    .attr("height", 72)
-    .attr("rx", 14)
-    .attr("fill", "rgba(255,255,255,0.88)")
-    .attr("stroke", "#e5e7eb");
+    .attr("width", legendW)
+    .attr("height", legendH)
+    .attr("rx", 10)
+    .attr("fill", "rgba(255,255,255,0.92)")
+    .attr("stroke", "#e5e7eb")
+    .attr("stroke-width", 1);
 
+  // — Tamanho = cloud ——
   legend.append("text")
-    .attr("x", 14)
-    .attr("y", 22)
+    .attr("x", 10).attr("y", 18)
     .attr("class", "chart-title-small")
-    .text("Tamanho do ponto");
+    .text("Tamanho  →  uso de cloud");
 
-  legend.append("circle")
-    .attr("cx", 32)
-    .attr("cy", 50)
-    .attr("r", r(35))
-    .attr("fill", COLORS.lightBlue)
-    .attr("stroke", COLORS.blue);
+  const cloudSorted = data.map(d => d.cloud_use_pct).sort(d3.ascending);
+  const cloudSamples = [
+    { v: d3.quantile(cloudSorted, 0.15), label: "baixo" },
+    { v: d3.quantile(cloudSorted, 0.85), label: "alto" }
+  ];
+  cloudSamples.forEach((s, i) => {
+    legend.append("circle")
+      .attr("cx", 28 + i * 52).attr("cy", 44)
+      .attr("r", r(s.v))
+      .attr("fill", "#c6dbef").attr("stroke", "#2563eb").attr("stroke-width", 1.2);
+    legend.append("text")
+      .attr("x", 28 + i * 52).attr("y", 72)
+      .attr("text-anchor", "middle")
+      .attr("fill", COLORS.muted).attr("font-size", 10.5)
+      .text(s.label);
+  });
 
-  legend.append("circle")
-    .attr("cx", 72)
-    .attr("cy", 50)
-    .attr("r", r(75))
-    .attr("fill", COLORS.lightBlue)
-    .attr("stroke", COLORS.blue);
+  // — Cor = data analytics ——
+  legend.append("text")
+    .attr("x", 10).attr("y", 85)
+    .attr("class", "chart-title-small")
+    .text("Cor  →  data analytics");
+
+  const gradId = "legend-analytics-grad";
+  const grad = defs.append("linearGradient").attr("id", gradId);
+  grad.append("stop").attr("offset", "0%").attr("stop-color", "#c6dbef");
+  grad.append("stop").attr("offset", "100%").attr("stop-color", "#08519c");
+
+  legend.append("rect")
+    .attr("x", 10).attr("y", 94)
+    .attr("width", 120).attr("height", 10)
+    .attr("rx", 5)
+    .attr("fill", `url(#${gradId})`);
 
   legend.append("text")
-    .attr("x", 100)
-    .attr("y", 54)
-    .attr("fill", COLORS.muted)
-    .attr("font-size", 12)
-    .text("uso de cloud");
+    .attr("x", 10).attr("y", 118)
+    .attr("fill", COLORS.muted).attr("font-size", 10.5)
+    .text(`${pct(colorAnalytics.domain()[0])}`);
+
+  legend.append("text")
+    .attr("x", 130).attr("y", 118)
+    .attr("text-anchor", "end")
+    .attr("fill", COLORS.muted).attr("font-size", 10.5)
+    .text(`${pct(colorAnalytics.domain()[1])}`);
+
+  // — PT destaque ——
+  legend.append("circle")
+    .attr("cx", 155).attr("cy", 102)
+    .attr("r", 7)
+    .attr("fill", colorAnalytics(data.find(d => d.geo === "PT").data_analytics_pct))
+    .attr("stroke", COLORS.orange).attr("stroke-width", 1.6);
+  legend.append("text")
+    .attr("x", 168).attr("y", 107)
+    .attr("fill", COLORS.muted).attr("font-size", 10.5)
+    .text("Portugal");
 }
 
 function drawPortugalVsEU(finalData) {
@@ -1135,67 +1206,6 @@ function drawBarrierChart(barrierData) {
 
 
 
-function drawCorrelationChart(report) {
-  const corr = report?.correlations_eu27_only || {};
-  const data = [
-    { label: "Intensidade digital muito alta", value: corr.corr_ai_vs_dii_very_high_pct, color: COLORS.blueDark },
-    { label: "Intensidade digital básica+", value: corr.corr_ai_vs_dii_at_least_basic_pct, color: COLORS.blue },
-    { label: "Intensidade digital alta", value: corr.corr_ai_vs_dii_high_pct, color: COLORS.blue },
-    { label: "Score de maturidade digital", value: corr.corr_ai_vs_digital_maturity_score_simple, color: COLORS.cyan },
-    { label: "Uso de cloud", value: corr.corr_ai_vs_cloud_use_pct, color: COLORS.orange },
-    { label: "Data analytics", value: corr.corr_ai_vs_data_analytics_pct, color: COLORS.green }
-  ]
-    .filter(d => Number.isFinite(+d.value))
-    .sort((a, b) => d3.ascending(a.value, b.value));
-
-  const { g, innerWidth, innerHeight } = createSvg("#correlation-chart", 560, 430, { top: 24, right: 48, bottom: 54, left: 212 });
-  const x = d3.scaleLinear().domain([0, 1]).range([0, innerWidth]);
-  const y = d3.scaleBand().domain(data.map(d => d.label)).range([innerHeight, 0]).padding(0.26);
-
-  addGridX(g, x, innerHeight);
-  g.append("g")
-    .attr("class", "axis")
-    .call(d3.axisLeft(y).tickSize(0));
-
-  g.append("g")
-    .attr("class", "axis")
-    .attr("transform", `translate(0,${innerHeight})`)
-    .call(d3.axisBottom(x).ticks(5).tickFormat(d => d3.format(".1f")(d).replace(".", ",")));
-
-  g.selectAll("rect.corr-bar")
-    .data(data)
-    .join("rect")
-    .attr("class", "corr-bar")
-    .attr("x", 0)
-    .attr("y", d => y(d.label))
-    .attr("width", d => x(d.value))
-    .attr("height", y.bandwidth())
-    .attr("rx", y.bandwidth() / 2)
-    .attr("fill", d => d.color)
-    .attr("fill-opacity", 0.86)
-    .on("mouseenter", (event, d) => showTooltip(event, `<strong>${d.label}</strong>Correlação com adoção de IA: ${fmt.corr(d.value).replace(".", ",")}`))
-    .on("mousemove", moveTooltip)
-    .on("mouseleave", hideTooltip);
-
-  g.selectAll("text.corr-value")
-    .data(data)
-    .join("text")
-    .attr("x", d => x(d.value) + 8)
-    .attr("y", d => y(d.label) + y.bandwidth() / 2 + 4)
-    .attr("fill", COLORS.ink)
-    .attr("font-size", 13)
-    .attr("font-weight", 900)
-    .text(d => fmt.corr(d.value).replace(".", ","));
-
-  g.append("text")
-    .attr("x", innerWidth / 2)
-    .attr("y", innerHeight + 42)
-    .attr("text-anchor", "middle")
-    .attr("fill", COLORS.muted)
-    .attr("font-size", 12)
-    .attr("font-weight", 800)
-    .text("Correlação linear com adoção de IA nos países UE27");
-}
 
 function drawMaturityAiGap(finalData) {
   // Top 10 paises com maior gap entre maturidade digital e adocao de IA
@@ -1403,7 +1413,6 @@ async function init() {
     drawPortugalVsEU(finalData);
     drawSizeChart(sizeData);
     drawSectorChart(sectorData);
-    drawCorrelationChart(report);
     drawMaturityAiGap(finalData);
     drawAIDepth(finalData);
     drawTechnologyChart(techData);
