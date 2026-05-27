@@ -14,6 +14,7 @@
 
   <main class="poster-shell">
     <header class="hero panel panel-dark">
+      <div class="hero-accent-bar" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="eyebrow">Sistemas de Visualização de Dados e Conhecimento · D3.js Poster</p>
         <p class="authors">Tomás Melo &amp; Nuno Araújo · Mestrado em Inteligência Artificial · Universidade do Minho · 2025/2026</p>
@@ -42,13 +43,13 @@
       </aside>
     </header>
 
-    <section class="kpi-grid" aria-label="Indicadores principais">
-      <article class="kpi-card highlight-eu">
+    <section class="kpi-grid reveal" aria-label="Indicadores principais">
+      <article class="kpi-card highlight-eu reveal reveal-delay-1">
         <span class="kpi-label">UE27 · empresas que usam IA</span>
         <strong id="kpi-eu-ai">—</strong>
         <small>referência europeia</small>
       </article>
-      <article class="kpi-card highlight-pt">
+      <article class="kpi-card highlight-pt reveal reveal-delay-2">
         <span class="kpi-label">Portugal · empresas que usam IA</span>
         <strong id="kpi-pt-ai">—</strong>
         <small id="kpi-pt-gap">—</small>
@@ -65,7 +66,7 @@
       </article>
     </section>
 
-    <section class="poster-intro panel">
+    <section class="poster-intro panel reveal">
       <div>
         <span class="strip-label">Percurso de leitura</span>
         <h2>Da distribuição territorial à explicação estrutural</h2>
@@ -80,7 +81,7 @@
       </ol>
     </section>
 
-    <section class="visual-section">
+    <section class="visual-section reveal">
       <div class="section-head">
         <span>01 · Geografia da adoção</span>
         <h2>Onde a IA empresarial já ganhou escala?</h2>
@@ -114,7 +115,7 @@
       </div>
     </section>
 
-    <section class="visual-section section-feature">
+    <section class="visual-section section-feature reveal">
       <div class="section-head">
         <span>02 · Maturidade digital</span>
         <h2>A IA tende a acompanhar ecossistemas empresariais mais digitalizados</h2>
@@ -159,7 +160,7 @@
       </div>
     </section>
 
-    <section class="visual-section section-diagnostic">
+    <section class="visual-section section-diagnostic reveal">
       <div class="section-head">
         <span>03 · Diagnóstico analítico</span>
         <h2>Nem toda a maturidade digital se transforma automaticamente em IA</h2>
@@ -210,7 +211,7 @@
       </div>
     </section>
 
-    <section class="visual-section">
+    <section class="visual-section reveal">
       <div class="section-head">
         <span>04 · Estrutura empresarial</span>
         <h2>A adoção não é homogénea: escala e setor importam</h2>
@@ -244,7 +245,7 @@
       </div>
     </section>
 
-    <section class="visual-section">
+    <section class="visual-section reveal">
       <div class="section-head">
         <span>05 · Usos, tecnologias e barreiras</span>
         <h2>Que IA é usada, para quê, e o que ainda trava a adoção?</h2>
@@ -303,5 +304,38 @@
   <!-- <script src="js/d3.v7.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    // Scroll-reveal
+    (function() {
+      const els = document.querySelectorAll('.reveal');
+      if (!els.length) return;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // Page-load progress bar
+    (function() {
+      const bar = document.createElement('div');
+      bar.style.cssText = `
+        position: fixed; top: 0; left: 0; height: 2px; width: 0;
+        background: linear-gradient(90deg, #1e4d8c, #c4a96e, #c45c1a);
+        z-index: 9999; transition: width 0.2s ease; pointer-events: none;
+      `;
+      document.body.appendChild(bar);
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const total = document.body.scrollHeight - window.innerHeight;
+        bar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+      });
+    })();
+  </script>
 </body>
 </html>
