@@ -1,4 +1,4 @@
-# Poster D3.js — Adoção de IA nas empresas europeias em 2025
+# D3.js — Adoção de IA nas empresas europeias em 2025
 
 Projeto para a UC Sistemas de Visualização de Dados e Conhecimento.
 
