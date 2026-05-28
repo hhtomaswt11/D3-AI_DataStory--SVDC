@@ -87,37 +87,61 @@ Alguns valores calculados no dataset final:
 
 ## Visualizações implementadas
 
-O poster está organizado como uma narrativa visual com várias secções:
+O poster/data story está organizado como uma narrativa visual em cinco blocos principais. A numeração abaixo segue a versão atual do `index.html` e do `main.js`.
 
-1. **Indicadores principais**  
-   KPIs com valores da UE27, Portugal, país líder e correlação mais forte.
+### Indicadores principais
 
-2. **Mapa sintético da UE27**  
-   Representação em grelha dos países europeus, coloridos pela percentagem de empresas que usam IA.
+Antes dos gráficos, o projeto apresenta quatro KPIs de síntese:
 
-3. **Ranking de países**  
-   Ordenação dos países da UE27 por adoção de IA, com Portugal destacado.
+- adoção de IA na UE27;
+- adoção de IA em Portugal;
+- país líder na adoção de IA;
+- relação/correlação mais forte observada.
 
-4. **Dispersão IA vs maturidade digital**  
-   Gráfico de dispersão que cruza adoção de IA com intensidade digital muito alta. O tamanho dos pontos representa o uso de cloud.
+### 01 · Geografia da adoção
 
-5. **Portugal vs UE27**  
-   Comparação direta entre Portugal e a média europeia em IA, cloud, data analytics e intensidade digital.
+1. **Mapa sintético da UE27**  
+   Representação em grelha dos países da UE27, onde cada célula corresponde a um país e a cor representa a percentagem de empresas que usam pelo menos uma tecnologia de IA.
 
-6. **Adoção por dimensão da empresa**  
-   Comparação entre pequenas, médias e grandes empresas.
+2. **Ranking UE27**  
+   Ordenação dos países da UE27 por adoção de IA, com Portugal destacado e com a média da UE27 assinalada como referência.
 
-7. **Adoção por setor de atividade**  
-   Identificação dos setores onde a utilização de IA é mais elevada.
+### 02 · Maturidade digital
 
-8. **Tecnologias de IA mais usadas**  
-   Distribuição das tecnologias de IA utilizadas pelas empresas.
+3. **IA vs intensidade digital muito alta**  
+   Gráfico de dispersão que cruza adoção de IA com intensidade digital muito alta. O tamanho dos pontos representa o uso de cloud e a cor representa data analytics. Portugal surge destacado.
 
-9. **Finalidades de uso da IA**  
-   Áreas onde a IA é aplicada, como marketing, gestão, produção, segurança TIC e inovação.
+4. **Portugal vs UE27**  
+   Comparação direta entre Portugal e a média europeia em IA, cloud, data analytics e intensidade digital alta. O gráfico inclui uma anotação específica para o gap de cloud entre Portugal e a UE27.
 
-10. **Barreiras à adoção**  
-    Principais obstáculos apontados pelas empresas que ainda não utilizam IA.
+### 03 · Diagnóstico analítico
+
+5. **Gap entre maturidade digital e adoção de IA**  
+   Identifica países onde a maturidade digital é superior à adoção efetiva de IA, mostrando potencial digital ainda não convertido em utilização de IA.
+
+6. **Adoção simples ou adoção intensiva?**  
+   Compara a utilização de pelo menos uma tecnologia de IA, duas ou mais tecnologias e três ou mais tecnologias, distinguindo adoção superficial de adoção mais profunda.
+
+### 04 · Estrutura empresarial
+
+7. **Escala empresarial: UE27 vs Portugal**  
+   Compara pequenas, médias e grandes empresas, mostrando que a adoção de IA aumenta com a dimensão empresarial e que Portugal fica abaixo da média europeia nos três grupos.
+
+8. **Setores onde a IA está mais concentrada**  
+   Mostra os setores da UE27 com maior percentagem de empresas que usam IA, evidenciando a concentração em áreas mais intensivas em informação, programação, investigação e comunicação.
+
+### 05 · Usos, tecnologias e barreiras
+
+9. **Tecnologias de IA mais usadas**  
+   Apresenta as tecnologias de IA mais utilizadas pelas empresas europeias.
+
+10. **Finalidades de uso**  
+    Mostra as principais áreas de aplicação da IA nas empresas, como vendas, gestão, processos internos, segurança TIC e inovação.
+
+11. **Barreiras à adoção: Portugal vs UE27**  
+    Compara as barreiras reportadas por Portugal e pela média da UE27, mostrando onde Portugal se aproxima ou se afasta do padrão europeu.
+
+> Nota: esta numeração substitui versões anteriores do projeto. Referências antigas a gráficos removidos ou com numeração diferente não devem ser usadas.
 
 ## Estrutura do projeto
 
