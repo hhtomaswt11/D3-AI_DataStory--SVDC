@@ -768,8 +768,8 @@ function drawPortugalVsEU(finalData) {
   const metrics = [
     ["IA", "ai_adoption_pct"],
     ["Cloud", "cloud_use_pct"],
-    ["Analytics", "data_analytics_pct"],
-    ["DII alta", "dii_high_pct"]
+    ["Data analytics", "data_analytics_pct"],
+    ["Intensidade digital alta", "dii_high_pct"]
   ];
 
   const data = metrics.flatMap(([label, key]) => [
@@ -787,7 +787,26 @@ function drawPortugalVsEU(finalData) {
 
   addGridY(g, y, innerWidth);
   g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(d => `${d}%`));
-  g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x0));
+  const xAxis = g.append("g")
+    .attr("class", "axis")
+    .attr("transform", `translate(0,${innerHeight})`)
+    .call(d3.axisBottom(x0));
+
+  // Mantém o rótulo completo sem abreviação no gráfico "Portugal vs UE27".
+  xAxis.selectAll(".tick text")
+    .attr("font-weight", 800)
+    .each(function(d) {
+      if (d === "Intensidade digital alta") {
+        const text = d3.select(this);
+        text.text(null);
+        ["Intensidade", "digital alta"].forEach((line, i) => {
+          text.append("tspan")
+            .attr("x", 0)
+            .attr("dy", i === 0 ? "0.75em" : "1.15em")
+            .text(line);
+        });
+      }
+    });
 
   g.selectAll("rect.compare")
     .data(data)
@@ -813,6 +832,72 @@ function drawPortugalVsEU(finalData) {
     .attr("font-weight", 900)
     .attr("fill", d => color(d.group))
     .text(d => fmt.pct(d.value).replace(".", ","));
+
+  // Anotação específica do gap de cloud entre Portugal e UE27.
+  // Não altera os dados nem as escalas: apenas assinala visualmente a distância entre os dois valores.
+  const euCloud = +eu.cloud_use_pct;
+  const ptCloud = +pt.cloud_use_pct;
+  if (Number.isFinite(euCloud) && Number.isFinite(ptCloud)) {
+    const cloudMetric = "Cloud";
+    const cloudGap = euCloud - ptCloud;
+    const absGap = fmt.pct(Math.abs(cloudGap)).replace(".", ",");
+    const gapText = cloudGap >= 0
+      ? `Gap cloud: UE27 +${absGap} p.p.`
+      : `Gap cloud: PT +${absGap} p.p.`;
+
+    const cloudX = x0(cloudMetric);
+    const xGap = cloudX + x0.bandwidth() + 8;
+    const yEu = y(euCloud);
+    const yPt = y(ptCloud);
+    const yTop = Math.min(yEu, yPt);
+    const yBottom = Math.max(yEu, yPt);
+    const labelY = Math.max(17, yTop - 30);
+
+    const gapGroup = g.append("g")
+      .attr("class", "cloud-gap-annotation")
+      .attr("pointer-events", "none");
+
+    gapGroup.append("line")
+      .attr("x1", xGap)
+      .attr("x2", xGap)
+      .attr("y1", yTop)
+      .attr("y2", yBottom)
+      .attr("stroke", COLORS.orange)
+      .attr("stroke-width", 1.8)
+      .attr("stroke-dasharray", "4 3");
+
+    [yTop, yBottom].forEach(yPos => {
+      gapGroup.append("line")
+        .attr("x1", xGap - 9)
+        .attr("x2", xGap + 9)
+        .attr("y1", yPos)
+        .attr("y2", yPos)
+        .attr("stroke", COLORS.orange)
+        .attr("stroke-width", 1.8)
+        .attr("stroke-linecap", "round");
+    });
+
+    const label = gapGroup.append("text")
+      .attr("x", cloudX + x0.bandwidth() / 2)
+      .attr("y", labelY)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 11)
+      .attr("font-weight", 900)
+      .attr("fill", COLORS.ink)
+      .text(gapText);
+
+    const bbox = label.node().getBBox();
+    gapGroup.insert("rect", "text")
+      .attr("x", bbox.x - 7)
+      .attr("y", bbox.y - 4)
+      .attr("width", bbox.width + 14)
+      .attr("height", bbox.height + 8)
+      .attr("rx", 6)
+      .attr("fill", "#fff7ed")
+      .attr("stroke", COLORS.orange)
+      .attr("stroke-width", 1)
+      .attr("opacity", 0.96);
+  }
 
   const legend = g.append("g").attr("transform", `translate(${innerWidth - 162},8)`);
   ["UE27", "Portugal"].forEach((name, i) => {
