@@ -1030,7 +1030,7 @@ body {
 .conclusion-panel > p {
   margin: 0;
   color: var(--dark-muted);
-  font-size: 17px;
+  font-size: clamp(18px, 1.25vw, 21px);
   line-height: 1.7;
   position: relative;
   z-index: 1;
