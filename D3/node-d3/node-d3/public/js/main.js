@@ -1289,7 +1289,7 @@ function drawBarrierChart(barrierData) {
     .attr("fill", COLORS.muted)
     .attr("font-size", 11)
     .attr("font-weight", 700)
-    .text("Nota: percentagem calculada entre empresas que nao usam IA. A linha mostra a diferenca PT-UE.");
+    .text("Nota: percentagem calculada entre empresas que nao usam IA.");
 }
 
 
